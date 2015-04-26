@@ -10,8 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frontbrian.png" translatesAutoresizingMaskIntoConstraints="NO" id="kUh-fB-qoe">
+                    <rect key="frame" x="-331" y="262" width="887" height="697"/>
+                </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-tI-JhA">
-                    <rect key="frame" x="0.0" y="160" width="1031" height="47"/>
+                    <rect key="frame" x="0.0" y="225" width="1031" height="47"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BEATRIZ MELO M MAGALHAES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5L-4i-hF1">
                             <rect key="frame" x="-6" y="-7" width="1115" height="73"/>
@@ -25,9 +28,6 @@
                         <rect key="frame" x="0.0" y="191" width="1031" height="47"/>
                     </variation>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frontbrian.png" translatesAutoresizingMaskIntoConstraints="NO" id="kUh-fB-qoe">
-                    <rect key="frame" x="-331" y="262" width="887" height="697"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>

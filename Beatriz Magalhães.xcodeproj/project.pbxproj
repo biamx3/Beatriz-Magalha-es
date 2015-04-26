@@ -28,6 +28,8 @@
 		E15120141AEC8CF500430F71 /* break7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E151200B1AEC8CF500430F71 /* break7.jpg */; };
 		E15120151AEC8CF500430F71 /* break8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E151200C1AEC8CF500430F71 /* break8.jpg */; };
 		E15120181AEC9CAD00430F71 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15120171AEC9CAD00430F71 /* MenuVC.swift */; };
+		E151201E1AED41C400430F71 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E151201D1AED41C400430F71 /* me.jpg */; };
+		E15120201AED446400430F71 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151201F1AED446400430F71 /* MeVC.swift */; };
 		E155799C1AEAB9B100D90F94 /* artwork5.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579941AEAB9B100D90F94 /* artwork5.png */; };
 		E155799E1AEAB9B100D90F94 /* artwork3.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579961AEAB9B100D90F94 /* artwork3.png */; };
 		E15579A01AEAB9B100D90F94 /* artwork6.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579981AEAB9B100D90F94 /* artwork6.png */; };
@@ -99,6 +101,8 @@
 		E151200B1AEC8CF500430F71 /* break7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = break7.jpg; sourceTree = "<group>"; };
 		E151200C1AEC8CF500430F71 /* break8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = break8.jpg; sourceTree = "<group>"; };
 		E15120171AEC9CAD00430F71 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		E151201D1AED41C400430F71 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
+		E151201F1AED446400430F71 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		E15579941AEAB9B100D90F94 /* artwork5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork5.png; sourceTree = "<group>"; };
 		E15579961AEAB9B100D90F94 /* artwork3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork3.png; sourceTree = "<group>"; };
 		E15579981AEAB9B100D90F94 /* artwork6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork6.png; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 		E1511FD91AEC27E600430F71 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E151201D1AED41C400430F71 /* me.jpg */,
 				E178C7EC1AE821C7005580E3 /* Main.storyboard */,
 				E15120041AEC8CE400430F71 /* Break Project */,
 				E1511FE51AEC71B000430F71 /* Project Brian */,
@@ -193,6 +198,7 @@
 				E15120001AEC8B3E00430F71 /* BreakController.swift */,
 				E15120021AEC8B5100430F71 /* BreakCollectionViewCell.swift */,
 				E1511FE11AEC6F0400430F71 /* ProjectController.swift */,
+				E151201F1AED446400430F71 /* MeVC.swift */,
 				E1511FE31AEC704D00430F71 /* ProjectCollectionViewCell.swift */,
 			);
 			name = Controller;
@@ -438,6 +444,7 @@
 				E15579AA1AEAFC9000D90F94 /* background.png in Resources */,
 				E15120141AEC8CF500430F71 /* break7.jpg in Resources */,
 				E1C032941AE956870048932B /* jump4.png in Resources */,
+				E151201E1AED41C400430F71 /* me.jpg in Resources */,
 				E18820FF1AE976360080800E /* run6.png in Resources */,
 				E178C7F31AE821C7005580E3 /* LaunchScreen.xib in Resources */,
 				E1511FF01AEC71D700430F71 /* brian5.png in Resources */,
@@ -484,6 +491,7 @@
 				E15120031AEC8B5100430F71 /* BreakCollectionViewCell.swift in Sources */,
 				E1511FE41AEC704D00430F71 /* ProjectCollectionViewCell.swift in Sources */,
 				E1511FE21AEC6F0400430F71 /* ProjectController.swift in Sources */,
+				E15120201AED446400430F71 /* MeVC.swift in Sources */,
 				E15120011AEC8B3E00430F71 /* BreakController.swift in Sources */,
 				E188211C1AE9A59F0080800E /* CollectionViewCell.swift in Sources */,
 				E178C7E91AE821C7005580E3 /* AppDelegate.swift in Sources */,

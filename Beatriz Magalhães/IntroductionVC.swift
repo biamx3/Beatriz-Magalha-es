@@ -185,22 +185,7 @@ class IntroductionVC: UIViewController {
             performSegueWithIdentifier("firstsegue", sender: sender)
 
             }
-        if (sender.direction == .Left) {
-            println("Swipe Left")
-            
-            //Reset Labels
-            self.hiLabel.alpha = 0.0
-            self.nameLabel.alpha = 0.0
-            self.ageLabel.alpha = 0.0
-            self.studentLabel.alpha = 0.0
-            self.swipeLabel.alpha = 0.0
-            
-            //Reset X Value
-            self.x = 1
-            self.brianView.frame.origin.x = 102
-        }
     }
- 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

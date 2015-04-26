@@ -124,9 +124,6 @@
                                         <exclude reference="Ouc-h1-nac"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="102" y="428" width="144" height="172"/>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="subviews">
                                         <include reference="Ouc-h1-nac"/>
@@ -411,6 +408,9 @@
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="417" height="75"/>
                                         </variation>
+                                        <connections>
+                                            <segue destination="dBy-aB-QAK" kind="show" id="KbF-5T-d8V"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.62516056050000002" blue="0.39874958869999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -568,7 +568,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNs-BX-tgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396.5" y="1851.75"/>
+            <point key="canvasLocation" x="1413" y="1904.25"/>
         </scene>
         <!--Layout Controller-->
         <scene sceneID="clr-Ev-BIn">
@@ -650,27 +650,18 @@
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
                                 <color key="textColor" red="1" green="0.37855202430000001" blue="0.16781555770000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="273" y="301" width="254" height="68"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="before we go on any further..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQX-Fv-cgi">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.50915729503421048" blue="0.31036052479999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="134" y="346" width="532" height="50"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have a confession to make." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baK-B8-NL7">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="31"/>
                                 <color key="textColor" red="1" green="0.62516056050000002" blue="0.39874958869999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="200" y="389" width="401" height="39"/>
-                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seb-GU-BjP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -680,45 +671,30 @@
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
                                         <color key="textColor" red="0.30869685740000002" green="0.28938860789999998" blue="0.71900647100000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="108" y="48" width="139" height="31"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I had" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr4-MJ-Lo5">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="23"/>
                                         <color key="textColor" red="0.47889165189999999" green="0.51675622190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="114" y="85" width="52" height="29"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNM-Ld-JPq">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="55"/>
                                         <color key="textColor" red="0.29753229689999999" green="0.27270863159999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="174" y="67" width="67" height="65"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="idea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ria-8f-Ugo">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="100"/>
                                         <color key="textColor" red="0.24700001969999999" green="0.22644388030000001" blue="0.82433712120000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="174" y="106" width="190" height="123"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BZ-Ae-7Vz">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="207"/>
                                         <color key="textColor" red="0.29491268529999998" green="0.25197555129999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="2" y="11" width="116" height="254"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -755,8 +731,7 @@
                                         <exclude reference="8AK-I6-w4S"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="366" y="420" width="364" height="273"/>
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="subviews">
                                         <include reference="aap-jA-jR7"/>
                                         <include reference="nr4-MJ-Lo5"/>
@@ -783,9 +758,6 @@
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="21"/>
                                 <color key="textColor" red="1" green="0.37855202430000001" blue="0.16781555770000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="233" y="272" width="373" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -823,16 +795,16 @@
                                 <exclude reference="4v5-dX-Umz"/>
                                 <exclude reference="DDL-7I-gRC"/>
                                 <exclude reference="cdK-UB-Y0z"/>
+                                <exclude reference="Whi-N3-UyY"/>
+                                <exclude reference="lYX-kP-MPy"/>
                                 <exclude reference="6ki-fd-GSy"/>
                                 <exclude reference="Xe2-qE-GZa"/>
                                 <exclude reference="fNp-s4-vRp"/>
                                 <exclude reference="tm2-ea-T35"/>
-                                <exclude reference="Whi-N3-UyY"/>
-                                <exclude reference="lYX-kP-MPy"/>
+                                <exclude reference="HYL-ul-Bpz"/>
                                 <exclude reference="Ig8-yi-ewY"/>
                                 <exclude reference="nDy-Ym-f2S"/>
                                 <exclude reference="oHb-YG-79k"/>
-                                <exclude reference="HYL-ul-Bpz"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -849,16 +821,16 @@
                                 <include reference="4v5-dX-Umz"/>
                                 <include reference="DDL-7I-gRC"/>
                                 <exclude reference="cdK-UB-Y0z"/>
+                                <include reference="Whi-N3-UyY"/>
+                                <include reference="lYX-kP-MPy"/>
                                 <include reference="6ki-fd-GSy"/>
                                 <include reference="Xe2-qE-GZa"/>
                                 <include reference="fNp-s4-vRp"/>
                                 <include reference="tm2-ea-T35"/>
-                                <include reference="Whi-N3-UyY"/>
-                                <include reference="lYX-kP-MPy"/>
+                                <include reference="HYL-ul-Bpz"/>
                                 <include reference="Ig8-yi-ewY"/>
                                 <include reference="nDy-Ym-f2S"/>
                                 <include reference="oHb-YG-79k"/>
-                                <include reference="HYL-ul-Bpz"/>
                             </mask>
                         </variation>
                         <connections>
@@ -906,15 +878,9 @@
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="19"/>
                                 <color key="textColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="409" y="590" width="349" height="190"/>
-                                </variation>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rDv-9O-Qbs">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="800" height="594"/>
-                                </variation>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -934,14 +900,14 @@
                                 <exclude reference="rDv-9O-Qbs"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="0u3-F0-lCO"/>
-                                <exclude reference="5Wk-WI-YRp"/>
-                                <exclude reference="Wk1-GL-MhY"/>
                                 <exclude reference="MNe-n2-ZWS"/>
                                 <exclude reference="Yyj-5T-xlQ"/>
                                 <exclude reference="he9-eH-Dvp"/>
                                 <exclude reference="DwM-kU-5mq"/>
                                 <exclude reference="ykF-Pq-7tH"/>
+                                <exclude reference="0u3-F0-lCO"/>
+                                <exclude reference="5Wk-WI-YRp"/>
+                                <exclude reference="Wk1-GL-MhY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -950,14 +916,14 @@
                                 <include reference="rDv-9O-Qbs"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="0u3-F0-lCO"/>
-                                <include reference="5Wk-WI-YRp"/>
-                                <include reference="Wk1-GL-MhY"/>
                                 <include reference="MNe-n2-ZWS"/>
                                 <include reference="Yyj-5T-xlQ"/>
                                 <include reference="he9-eH-Dvp"/>
                                 <include reference="DwM-kU-5mq"/>
                                 <include reference="ykF-Pq-7tH"/>
+                                <include reference="0u3-F0-lCO"/>
+                                <include reference="5Wk-WI-YRp"/>
+                                <include reference="Wk1-GL-MhY"/>
                             </mask>
                         </variation>
                     </view>
@@ -997,6 +963,9 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="break1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y4O-Wp-cx4">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                <rect key="frame" x="8" y="-6" width="42" height="56"/>
+                                            </variation>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1049,7 +1018,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwJ-Dc-fVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036.25" y="2525.25"/>
+            <point key="canvasLocation" x="2804.25" y="2651.25"/>
         </scene>
         <!--Project Controller-->
         <scene sceneID="Sac-Pm-iSR">
@@ -1074,6 +1043,9 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brian7.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Fl-zk5">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                <rect key="frame" x="8" y="8" width="34" height="34"/>
+                                            </variation>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1108,6 +1080,7 @@
                                 </variation>
                                 <connections>
                                     <outlet property="pinImage" destination="bHk-Fl-zk5" id="WR2-vg-v6f"/>
+                                    <segue destination="dBy-aB-QAK" kind="show" identifier="toMe" id="ClG-rZ-SAQ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -1116,14 +1089,7 @@
                             <outlet property="delegate" destination="YPz-w9-e4G" id="Qxf-ha-Sw0"/>
                         </connections>
                     </collectionView>
-                    <toolbarItems>
-                        <barButtonItem title="&lt;menu" id="4JS-w5-JCF">
-                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="ayj-g9-vcP" kind="show" id="TxA-4m-7Z5"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -1153,19 +1119,323 @@
             </objects>
             <point key="canvasLocation" x="843.75" y="2595.75"/>
         </scene>
+        <!--MeVC-->
+        <scene sceneID="sdI-GR-cCY">
+            <objects>
+                <viewController id="dBy-aB-QAK" customClass="MeVC" customModule="Beatriz_Magalha_es" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dx5-JY-68c"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mxr-mg-PN7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n4n-cf-fgU">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cZq-Xp-fVu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="35" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5W-x9-4UU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="3ej-L6-KGP"/>
+                                    <constraint firstAttribute="height" constant="500" id="uMI-Lj-mf2"/>
+                                </constraints>
+                                <mutableString key="text">I am Beatriz Magalhães, an undergraduate Digital Media Design student at the Pontificial Catholic University of Rio de Janeiro.
+
+Since I joined PUC-Rio, three semesters ago, I've had the opportunity of winning two Academic Merit Scholarship Awards for being among the top 60 students among our 12,500 student body. 
+
+I am passionate about the power storytelling holds for transforming and touching people's lives. I like to put it in practice wherever I can, whether it's in animation, an illustration or even a live presentation.
+
+I discovered programming when I joined, during my second semester in late 2014, the Brazilian Education Program for iOS Development. BEPiD is a program developed by Apple in partnership with the Software Engineering Lab at PUC-Rio. 
+
+Its mission of training developers to be creative thinkers and entrepreneurs changed the way I view technology and how it can swiftly impact the world in the most unusual and compelling ways.. I've been developing apps in teams with my colleagues at BEPiD ever since.
+
+This is the first app in which I am solely responsible for everything: from the concept, to the implementation. The entire process lasted 6 days.
+It know it's still a bit rough around the edges, but I learned the essence and, with some more time and practice, I'll be able to create what I've always dreamed of.</mutableString>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
+                                <color key="textColor" red="0.97585227272727271" green="0.97585227272727271" blue="0.97585227272727271" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3ej-L6-KGP"/>
+                                        <exclude reference="uMI-Lj-mf2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="0.0" width="328" height="412"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3ej-L6-KGP"/>
+                                        <include reference="uMI-Lj-mf2"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-Ah-5HR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e: beatriz.m.m.magalhaes@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ3-LH-HYJ">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="44" y="12" width="228" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="50" y="16" width="228" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.2666666667" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="C0F-MF-XFw"/>
+                                    <constraint firstAttribute="centerY" secondItem="zZ3-LH-HYJ" secondAttribute="centerY" id="snb-bb-9oN"/>
+                                    <constraint firstAttribute="height" constant="53" id="vsR-u6-i6U"/>
+                                    <constraint firstItem="zZ3-LH-HYJ" firstAttribute="leading" secondItem="BSf-Ah-5HR" secondAttribute="leading" constant="50" id="wbK-WR-Cip"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="zZ3-LH-HYJ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="C0F-MF-XFw"/>
+                                        <exclude reference="vsR-u6-i6U"/>
+                                        <exclude reference="snb-bb-9oN"/>
+                                        <exclude reference="wbK-WR-Cip"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="-45" y="-30" width="56" height="0.0"/>
+                                    <mask key="subviews">
+                                        <include reference="zZ3-LH-HYJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="440" y="600" width="328" height="53"/>
+                                    <mask key="constraints">
+                                        <include reference="C0F-MF-XFw"/>
+                                        <include reference="vsR-u6-i6U"/>
+                                        <include reference="snb-bb-9oN"/>
+                                        <include reference="wbK-WR-Cip"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guf-jF-i3m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="linkedin: /beatrizmmm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxR-Sx-yAM">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="92" y="12" width="132" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="92" y="16" width="132" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.37855202430000001" blue="0.16781555770000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="44R-0e-ujB"/>
+                                    <constraint firstItem="rxR-Sx-yAM" firstAttribute="top" secondItem="guf-jF-i3m" secondAttribute="top" constant="16" id="EeB-QH-NXf"/>
+                                    <constraint firstAttribute="centerX" secondItem="rxR-Sx-yAM" secondAttribute="centerX" constant="6" id="bHT-SB-een"/>
+                                    <constraint firstAttribute="width" constant="328" id="ddn-Kj-trJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="rxR-Sx-yAM"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="44R-0e-ujB"/>
+                                        <exclude reference="ddn-Kj-trJ"/>
+                                        <exclude reference="EeB-QH-NXf"/>
+                                        <exclude reference="bHT-SB-een"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="-4" y="-22" width="34" height="0.0"/>
+                                    <mask key="subviews">
+                                        <include reference="rxR-Sx-yAM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="440" y="661" width="328" height="53"/>
+                                    <mask key="constraints">
+                                        <include reference="44R-0e-ujB"/>
+                                        <include reference="ddn-Kj-trJ"/>
+                                        <include reference="EeB-QH-NXf"/>
+                                        <include reference="bHT-SB-een"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAg-mX-IVN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="portfolio: behance.net/beatrizmousinho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2E-TS-1rW">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="44" y="12" width="229" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="50" y="16" width="229" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="Dpe-ar-R4C"/>
+                                    <constraint firstAttribute="height" constant="53" id="M2v-qJ-nyS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="328" id="gMb-i8-60V"/>
+                                    <constraint firstItem="a2E-TS-1rW" firstAttribute="top" secondItem="mAg-mX-IVN" secondAttribute="top" constant="16" id="iOF-cM-bjd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="53" id="tC6-j8-7S9"/>
+                                    <constraint firstAttribute="centerX" secondItem="a2E-TS-1rW" secondAttribute="centerX" constant="-0.5" id="toi-Lr-CNN"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="a2E-TS-1rW"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="Dpe-ar-R4C"/>
+                                        <exclude reference="M2v-qJ-nyS"/>
+                                        <exclude reference="gMb-i8-60V"/>
+                                        <exclude reference="tC6-j8-7S9"/>
+                                        <exclude reference="iOF-cM-bjd"/>
+                                        <exclude reference="toi-Lr-CNN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="-83" y="-14" width="55" height="0.0"/>
+                                    <mask key="subviews">
+                                        <include reference="a2E-TS-1rW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="440" y="722" width="328" height="53"/>
+                                    <mask key="constraints">
+                                        <include reference="Dpe-ar-R4C"/>
+                                        <include reference="M2v-qJ-nyS"/>
+                                        <include reference="gMb-i8-60V"/>
+                                        <include reference="tC6-j8-7S9"/>
+                                        <include reference="iOF-cM-bjd"/>
+                                        <include reference="toi-Lr-CNN"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="guf-jF-i3m" firstAttribute="top" secondItem="BSf-Ah-5HR" secondAttribute="bottom" constant="8" id="0yZ-xP-bGg"/>
+                            <constraint firstItem="mAg-mX-IVN" firstAttribute="leading" secondItem="cZq-Xp-fVu" secondAttribute="trailing" constant="-360" id="7Wa-N0-nCF"/>
+                            <constraint firstItem="cZq-Xp-fVu" firstAttribute="bottom" secondItem="Mxr-mg-PN7" secondAttribute="top" id="GYa-h0-9Kq"/>
+                            <constraint firstAttribute="trailing" secondItem="cZq-Xp-fVu" secondAttribute="trailing" id="IbR-OP-KhK"/>
+                            <constraint firstItem="cZq-Xp-fVu" firstAttribute="top" secondItem="n4n-cf-fgU" secondAttribute="top" id="KOG-CC-NXE"/>
+                            <constraint firstItem="mAg-mX-IVN" firstAttribute="top" secondItem="guf-jF-i3m" secondAttribute="bottom" constant="8" id="PJU-Xr-mqQ"/>
+                            <constraint firstItem="A5W-x9-4UU" firstAttribute="leading" secondItem="cZq-Xp-fVu" secondAttribute="trailing" constant="-360" id="Q5b-Xt-de9"/>
+                            <constraint firstItem="BSf-Ah-5HR" firstAttribute="leading" secondItem="cZq-Xp-fVu" secondAttribute="trailing" constant="-360" id="Rp3-9S-aQO"/>
+                            <constraint firstItem="guf-jF-i3m" firstAttribute="leading" secondItem="cZq-Xp-fVu" secondAttribute="trailing" constant="-360" id="U5n-6P-XVY"/>
+                            <constraint firstItem="cZq-Xp-fVu" firstAttribute="leading" secondItem="n4n-cf-fgU" secondAttribute="leading" id="USL-h5-BF4"/>
+                            <constraint firstItem="guf-jF-i3m" firstAttribute="top" secondItem="BSf-Ah-5HR" secondAttribute="bottom" constant="8" id="Zhf-60-60d"/>
+                            <constraint firstItem="mAg-mX-IVN" firstAttribute="top" secondItem="guf-jF-i3m" secondAttribute="bottom" constant="8" id="f79-Vy-MqG"/>
+                            <constraint firstItem="cZq-Xp-fVu" firstAttribute="top" secondItem="A5W-x9-4UU" secondAttribute="bottom" constant="-577" id="jK3-1y-oTn"/>
+                            <constraint firstItem="Mxr-mg-PN7" firstAttribute="top" secondItem="mAg-mX-IVN" secondAttribute="bottom" constant="14" id="ltI-Tg-aGh"/>
+                            <constraint firstItem="BSf-Ah-5HR" firstAttribute="leading" secondItem="cZq-Xp-fVu" secondAttribute="trailing" constant="-360" id="zzn-ke-jAW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cZq-Xp-fVu"/>
+                                <exclude reference="A5W-x9-4UU"/>
+                                <exclude reference="BSf-Ah-5HR"/>
+                                <exclude reference="guf-jF-i3m"/>
+                                <exclude reference="mAg-mX-IVN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GYa-h0-9Kq"/>
+                                <exclude reference="IbR-OP-KhK"/>
+                                <exclude reference="KOG-CC-NXE"/>
+                                <exclude reference="USL-h5-BF4"/>
+                                <exclude reference="jK3-1y-oTn"/>
+                                <exclude reference="Q5b-Xt-de9"/>
+                                <exclude reference="Rp3-9S-aQO"/>
+                                <exclude reference="zzn-ke-jAW"/>
+                                <exclude reference="0yZ-xP-bGg"/>
+                                <exclude reference="U5n-6P-XVY"/>
+                                <exclude reference="Zhf-60-60d"/>
+                                <exclude reference="ltI-Tg-aGh"/>
+                                <exclude reference="7Wa-N0-nCF"/>
+                                <exclude reference="PJU-Xr-mqQ"/>
+                                <exclude reference="f79-Vy-MqG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="cZq-Xp-fVu"/>
+                                <include reference="BSf-Ah-5HR"/>
+                                <include reference="guf-jF-i3m"/>
+                                <include reference="mAg-mX-IVN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GYa-h0-9Kq"/>
+                                <include reference="IbR-OP-KhK"/>
+                                <include reference="KOG-CC-NXE"/>
+                                <include reference="USL-h5-BF4"/>
+                                <include reference="0yZ-xP-bGg"/>
+                                <include reference="ltI-Tg-aGh"/>
+                                <include reference="f79-Vy-MqG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="A5W-x9-4UU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="jK3-1y-oTn"/>
+                                <include reference="Q5b-Xt-de9"/>
+                                <include reference="Rp3-9S-aQO"/>
+                                <include reference="zzn-ke-jAW"/>
+                                <exclude reference="0yZ-xP-bGg"/>
+                                <include reference="U5n-6P-XVY"/>
+                                <include reference="Zhf-60-60d"/>
+                                <include reference="7Wa-N0-nCF"/>
+                                <include reference="PJU-Xr-mqQ"/>
+                                <exclude reference="f79-Vy-MqG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="eView" destination="BSf-Ah-5HR" id="RZO-RD-oOJ"/>
+                        <outlet property="linkView" destination="guf-jF-i3m" id="D9H-1B-oSV"/>
+                        <outlet property="meLabel" destination="A5W-x9-4UU" id="8C8-BA-uYv"/>
+                        <outlet property="portView" destination="guf-jF-i3m" id="vAK-qo-Yeg"/>
+                        <segue destination="ayj-g9-vcP" kind="show" identifier="meMenu" id="XiX-Wj-6gc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRR-yn-z3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752.75" y="2814"/>
+        </scene>
     </scenes>
     <resources>
         <image name="artwork1.png" width="2136" height="1337"/>
         <image name="break1.jpg" width="540" height="960"/>
         <image name="brian7.png" width="1280" height="960"/>
+        <image name="me.jpg" width="960" height="636"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y7o-pJ-eEF"/>
-        <segue reference="0zo-LN-rGr"/>
         <segue reference="aKg-f9-BaO"/>
-        <segue reference="Nj7-Cf-LbW"/>
-        <segue reference="lNc-oP-fA8"/>
-        <segue reference="c2s-1T-Zog"/>
+        <segue reference="jkD-MM-WQy"/>
+        <segue reference="XiX-Wj-6gc"/>
+        <segue reference="KbF-5T-d8V"/>
+        <segue reference="d2Z-g9-m1e"/>
+        <segue reference="Fr7-UC-x1k"/>
+        <segue reference="A3Y-Qs-4hh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
 </document>
