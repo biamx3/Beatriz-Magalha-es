@@ -186,6 +186,9 @@ class ConfessionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBarHidden = false
+
+        
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "<back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
         let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
@@ -198,12 +201,8 @@ class ConfessionVC: UIViewController {
         self.navigationItem.leftBarButtonItem = newBackButton;
         
         //Swipe
-        
-        var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
         var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        leftSwipe.direction = .Left
         rightSwipe.direction = .Right
-        view.addGestureRecognizer(leftSwipe)
         view.addGestureRecognizer(rightSwipe)
         
         
@@ -263,7 +262,7 @@ class ConfessionVC: UIViewController {
             self.imageView.startAnimating()
             
             UIView.animateWithDuration(0.8, delay: 0.0, options: nil, animations: {
-                self.imageView.frame.origin.x = (self.imageView.frame.origin.x*3.2)
+                self.imageView.frame.origin.x = (self.imageView.frame.origin.x*3.4)
                 self.imageView.frame.origin.y = (self.imageView.frame.origin.y+72)
                 }, completion: {finished in
                     self.imageView.animationImages = self.brianJumpArray

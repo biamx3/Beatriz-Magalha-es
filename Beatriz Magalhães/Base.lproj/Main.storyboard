@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r4I-E1-MUb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o5e-7e-Had">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -67,16 +67,13 @@
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.5342450545607087" blue="0.24370068679493095" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="102" y="192" width="396" height="50"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(or swipe to left to start over!)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBx-Iv-zgQ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.98419744320000002" green="0.66292021229999998" blue="0.43695228270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="161" y="528" width="389" height="21"/>
                                 </variation>
                             </label>
@@ -85,9 +82,6 @@
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.42319802126666317" blue="0.12261307790854881" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="102" y="250" width="396" height="50"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe to the right to see some of my artwork!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-Gt-68H">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -102,8 +96,7 @@
                                         <exclude reference="Icr-dP-vVe"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="102" y="308" width="454" height="40"/>
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
                                         <include reference="Icr-dP-vVe"/>
                                     </mask>
@@ -158,8 +151,7 @@
                                         <include reference="gWU-dm-w29"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="211" y="527" width="179" height="21"/>
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
                                         <exclude reference="gWU-dm-w29"/>
                                     </mask>
@@ -170,9 +162,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.45459829010000002" blue="0.31036052479999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="160" y="545" width="356" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -329,7 +318,15 @@
                             <outletCollection property="gestureRecognizers" destination="ZRy-DS-Ebi" appends="YES" id="7GD-YZ-p40"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="99w-YB-6dE"/>
+                    <navigationItem key="navigationItem" id="99w-YB-6dE">
+                        <barButtonItem key="rightBarButtonItem" title="menu&gt;" id="JJk-Cp-Yoj">
+                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ayj-g9-vcP" kind="show" id="eb8-XS-WmS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="ageLabel" destination="GLP-WJ-pHh" id="rPl-Zs-9rx"/>
@@ -347,7 +344,237 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="ZRy-DS-Ebi"/>
             </objects>
-            <point key="canvasLocation" x="387.75" y="533.25"/>
+            <point key="canvasLocation" x="411.75" y="1031.25"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="5gM-TO-el5">
+            <objects>
+                <viewController id="ayj-g9-vcP" customClass="MenuVC" customModule="Beatriz_Magalha_es" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skm-Hd-Dp3"/>
+                        <viewControllerLayoutGuide type="bottom" id="9V8-9b-yVK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="45C-Pd-Chh">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gA-XP-TBY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artwork portfolio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lF-pj-nag">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="78" y="22" width="260" height="32"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idy-ca-pHj">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="417" height="75"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="EcV-oW-rs4" kind="show" id="jkD-MM-WQy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.33568607039999998" blue="0.16781555770000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="2lF-pj-nag"/>
+                                        <exclude reference="idy-ca-pHj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="134" y="390" width="417" height="75"/>
+                                    <mask key="subviews">
+                                        <include reference="2lF-pj-nag"/>
+                                        <include reference="idy-ca-pHj"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMg-U7-8RW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUB-hW-atE">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="78" y="22" width="260" height="32"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIG-XL-VzM">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="417" height="75"/>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.62516056050000002" blue="0.39874958869999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="JUB-hW-atE"/>
+                                        <exclude reference="KIG-XL-VzM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="134" y="570" width="417" height="75"/>
+                                    <mask key="subviews">
+                                        <include reference="JUB-hW-atE"/>
+                                        <include reference="KIG-XL-VzM"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mja-lq-veT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="development projects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKh-Y5-RsM">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="78" y="22" width="260" height="32"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1b-P3-giY">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="417" height="75"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="lc4-pi-VzL" kind="show" id="d2Z-g9-m1e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.45459829010000002" blue="0.31036052479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="HKh-Y5-RsM"/>
+                                        <exclude reference="z1b-P3-giY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="134" y="480" width="417" height="75"/>
+                                    <mask key="subviews">
+                                        <include reference="HKh-Y5-RsM"/>
+                                        <include reference="z1b-P3-giY"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9R-AR-6oR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="story mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmi-0s-XJy">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="72" y="27" width="260" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw4-n2-R2U">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="417" height="75"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="storySegue" id="Fr7-UC-x1k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.2666666667" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Zmi-0s-XJy"/>
+                                        <exclude reference="Xw4-n2-R2U"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="134" y="301" width="417" height="75"/>
+                                    <mask key="subviews">
+                                        <include reference="Zmi-0s-XJy"/>
+                                        <include reference="Xw4-n2-R2U"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-Z9-k1z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEATRIZ MELO M MAGALHAES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkW-IW-PBa">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="67"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="-6" y="-7" width="1282" height="72"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.2666666667" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="lkW-IW-PBa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="191" width="1031" height="47"/>
+                                    <mask key="subviews">
+                                        <include reference="lkW-IW-PBa"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="1"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4gA-XP-TBY"/>
+                                <exclude reference="MMg-U7-8RW"/>
+                                <exclude reference="mja-lq-veT"/>
+                                <exclude reference="v9R-AR-6oR"/>
+                                <exclude reference="FsU-Z9-k1z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="4gA-XP-TBY"/>
+                                <include reference="MMg-U7-8RW"/>
+                                <include reference="mja-lq-veT"/>
+                                <include reference="v9R-AR-6oR"/>
+                                <include reference="FsU-Z9-k1z"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="nip-a0-hWU"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="artView" destination="4gA-XP-TBY" id="CSl-z7-Ik8"/>
+                        <outlet property="contactView" destination="MMg-U7-8RW" id="gdQ-Ng-Vld"/>
+                        <outlet property="devView" destination="mja-lq-veT" id="1XC-4o-vPH"/>
+                        <outlet property="nameView" destination="FsU-Z9-k1z" id="r9d-rA-eaM"/>
+                        <outlet property="storyView" destination="v9R-AR-6oR" id="o0s-Kd-o7r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNs-BX-tgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.5" y="1257.75"/>
         </scene>
         <!--Layout Controller-->
         <scene sceneID="clr-Ev-BIn">
@@ -392,7 +619,6 @@
                                 </variation>
                                 <connections>
                                     <outlet property="pinImage" destination="rff-ZH-gR3" id="XOH-v9-9Gp"/>
-                                    <segue destination="r4I-E1-MUb" kind="show" identifier="secondsegue" id="FGc-nn-PWf"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -401,7 +627,12 @@
                             <outlet property="delegate" destination="EcV-oW-rs4" id="XXR-dz-ZTb"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="9yF-VI-5hX"/>
+                    <navigationItem key="navigationItem" id="9yF-VI-5hX">
+                        <barButtonItem key="rightBarButtonItem" title="menu&gt;" id="ZJg-ei-Jdk">
+                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="mFp-a5-gCY" kind="show" identifier="thirdsegue" id="aKg-f9-BaO"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="back1" id="lNc-oP-fA8"/>
@@ -409,7 +640,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DN7-0c-F2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178.25" y="540.75"/>
+            <point key="canvasLocation" x="1164.75" y="765.75"/>
         </scene>
         <!--ConfessionVC-->
         <scene sceneID="mGD-j8-sf6">
@@ -428,18 +659,27 @@
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
                                 <color key="textColor" red="1" green="0.37855202430000001" blue="0.16781555770000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="273" y="301" width="254" height="68"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="before we go on any further..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQX-Fv-cgi">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.50915729503421048" blue="0.31036052479999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="134" y="346" width="532" height="50"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have a confession to make." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baK-B8-NL7">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="31"/>
                                 <color key="textColor" red="1" green="0.62516056050000002" blue="0.39874958869999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="200" y="389" width="401" height="39"/>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seb-GU-BjP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -449,30 +689,45 @@
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
                                         <color key="textColor" red="0.30869685740000002" green="0.28938860789999998" blue="0.71900647100000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="108" y="48" width="139" height="31"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I had" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr4-MJ-Lo5">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="23"/>
                                         <color key="textColor" red="0.47889165189999999" green="0.51675622190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="114" y="85" width="52" height="29"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNM-Ld-JPq">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="55"/>
                                         <color key="textColor" red="0.29753229689999999" green="0.27270863159999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="174" y="67" width="67" height="65"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="idea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ria-8f-Ugo">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="100"/>
                                         <color key="textColor" red="0.24700001969999999" green="0.22644388030000001" blue="0.82433712120000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="174" y="106" width="190" height="123"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BZ-Ae-7Vz">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="207"/>
                                         <color key="textColor" red="0.29491268529999998" green="0.25197555129999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="2" y="11" width="116" height="254"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -509,7 +764,8 @@
                                         <exclude reference="8AK-I6-w4S"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="366" y="420" width="364" height="273"/>
                                     <mask key="subviews">
                                         <include reference="aap-jA-jR7"/>
                                         <include reference="nr4-MJ-Lo5"/>
@@ -531,11 +787,14 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe to the right to see where it all started!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9es-7U-WSZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe to the right to see how I got here!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9es-7U-WSZ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="21"/>
                                 <color key="textColor" red="1" green="0.37855202430000001" blue="0.16781555770000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="233" y="272" width="373" height="21"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -615,6 +874,16 @@
                             <outletCollection property="gestureRecognizers" destination="4gY-PB-bZ1" appends="YES" id="EG9-HF-j1K"/>
                         </connections>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="&lt;menu" id="NEo-sW-MGO">
+                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ayj-g9-vcP" kind="show" id="Ar7-6A-x76"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="beforeLabel" destination="YQX-Fv-cgi" id="9bn-Dq-qTj"/>
                         <outlet property="confessionLabel" destination="baK-B8-NL7" id="ATY-lw-dVv"/>
@@ -647,15 +916,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rDv-9O-Qbs">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQx-32-0hB">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="19"/>
                                 <color key="textColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="409" y="590" width="349" height="190"/>
+                                </variation>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rDv-9O-Qbs">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="594"/>
+                                </variation>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -670,8 +945,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="rDv-9O-Qbs"/>
                                 <exclude reference="SQx-32-0hB"/>
+                                <exclude reference="rDv-9O-Qbs"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0u3-F0-lCO"/>
@@ -686,8 +961,8 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="rDv-9O-Qbs"/>
                                 <include reference="SQx-32-0hB"/>
+                                <include reference="rDv-9O-Qbs"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0u3-F0-lCO"/>
@@ -701,16 +976,103 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="&lt;menu" id="Qr7-6Q-3NI">
+                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </toolbarItems>
                     <connections>
                         <outlet property="mapView" destination="rDv-9O-Qbs" id="HOw-MY-zcr"/>
                         <outlet property="textLabel" destination="SQx-32-0hB" id="7he-Yq-ZSK"/>
                         <segue destination="mFp-a5-gCY" kind="show" identifier="backtoConfession" id="bwT-9f-f2l"/>
-                        <segue destination="YPz-w9-e4G" kind="show" identifier="ontoProject" id="ZKR-j5-4ci"/>
+                        <segue destination="lc4-pi-VzL" kind="show" identifier="toBreak" id="Y7o-pJ-eEF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Y-NW-8Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2590.5" y="515.25"/>
+        </scene>
+        <!--Break Controller-->
+        <scene sceneID="YI7-Hw-c8A">
+            <objects>
+                <collectionViewController id="lc4-pi-VzL" customClass="BreakController" customModule="Beatriz_Magalha_es" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wQw-VY-guI">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xNq-1V-BTT">
+                            <size key="itemSize" width="381" height="655"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="callCell" id="mxw-Tj-gIf" customClass="BreakCollectionViewCell" customModule="Beatriz_Magalha_es" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="655"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="break1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y4O-Wp-cx4">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="y4O-Wp-cx4" firstAttribute="top" secondItem="mxw-Tj-gIf" secondAttribute="topMargin" constant="-14" id="93O-Md-khx"/>
+                                    <constraint firstAttribute="bottom" secondItem="y4O-Wp-cx4" secondAttribute="bottom" id="Z29-Ek-YDb"/>
+                                    <constraint firstItem="y4O-Wp-cx4" firstAttribute="leading" secondItem="mxw-Tj-gIf" secondAttribute="leadingMargin" id="bl3-iY-h7t"/>
+                                    <constraint firstAttribute="trailing" secondItem="y4O-Wp-cx4" secondAttribute="trailing" id="iuU-1A-nyT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="y4O-Wp-cx4"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="93O-Md-khx"/>
+                                        <exclude reference="Z29-Ek-YDb"/>
+                                        <exclude reference="bl3-iY-h7t"/>
+                                        <exclude reference="iuU-1A-nyT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="y4O-Wp-cx4"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="93O-Md-khx"/>
+                                        <include reference="Z29-Ek-YDb"/>
+                                        <include reference="bl3-iY-h7t"/>
+                                        <include reference="iuU-1A-nyT"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="pin3Image" destination="y4O-Wp-cx4" id="VmL-Zw-4wc"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="lc4-pi-VzL" id="Smf-HN-xNb"/>
+                            <outlet property="delegate" destination="lc4-pi-VzL" id="wcM-xG-HvS"/>
+                        </connections>
+                    </collectionView>
+                    <toolbarItems>
+                        <barButtonItem title="&lt;menu" id="7A1-2T-i1i">
+                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ayj-g9-vcP" kind="show" id="WJg-CR-vnu"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <connections>
+                        <segue destination="i3e-Yy-16y" kind="show" identifier="fromBreak" id="A3Y-Qs-4hh"/>
+                        <segue destination="YPz-w9-e4G" kind="show" identifier="toBrain" id="gOd-oS-pkE"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwJ-Dc-fVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586.25" y="1958.25"/>
         </scene>
         <!--Project Controller-->
         <scene sceneID="Sac-Pm-iSR">
@@ -733,7 +1095,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="716" height="806"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brian3.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Fl-zk5">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brian7.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Fl-zk5">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         </imageView>
                                     </subviews>
@@ -769,7 +1131,6 @@
                                 </variation>
                                 <connections>
                                     <outlet property="pinImage" destination="bHk-Fl-zk5" id="WR2-vg-v6f"/>
-                                    <segue destination="i3e-Yy-16y" kind="show" identifier="backtomap" id="ykf-fC-6eY"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -778,38 +1139,55 @@
                             <outlet property="delegate" destination="YPz-w9-e4G" id="Qxf-ha-Sw0"/>
                         </connections>
                     </collectionView>
+                    <toolbarItems>
+                        <barButtonItem title="&lt;menu" id="4JS-w5-JCF">
+                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ayj-g9-vcP" kind="show" id="TxA-4m-7Z5"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="lc4-pi-VzL" kind="show" identifier="backBreak" id="mfS-tK-mSt"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYd-Sq-ZBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534.25" y="1316.25"/>
+            <point key="canvasLocation" x="3090.75" y="1712.25"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="nep-Ol-ut7">
+        <scene sceneID="RmU-cN-OD1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r4I-E1-MUb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o5e-7e-Had" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7n-Ak-V2j">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u8N-q6-iGP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z7q-TH-nr9"/>
+                        <segue destination="ayj-g9-vcP" kind="relationship" relationship="rootViewController" id="h96-iQ-kKo"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hyH-YB-Bmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iS-Ko-Iiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-371.25" y="533.25"/>
+            <point key="canvasLocation" x="-1196.25" y="1257.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="artwork1.png" width="2136" height="1337"/>
-        <image name="brian3.png" width="1240" height="940"/>
+        <image name="break1.jpg" width="540" height="960"/>
+        <image name="brian7.png" width="1280" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lNc-oP-fA8"/>
-        <segue reference="Nj7-Cf-LbW"/>
+        <segue reference="mfS-tK-mSt"/>
+        <segue reference="A3Y-Qs-4hh"/>
+        <segue reference="WJg-CR-vnu"/>
         <segue reference="bwT-9f-f2l"/>
-        <segue reference="ykf-fC-6eY"/>
+        <segue reference="Nj7-Cf-LbW"/>
+        <segue reference="Fr7-UC-x1k"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
 </document>

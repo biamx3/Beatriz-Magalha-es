@@ -76,10 +76,12 @@ class MapVC: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBarHidden = false
+        
         self.textLabel.alpha = 0
         
 
-        self.textLabel.text = "BEPiD: that's were it all started. When I entered the Brazilian Education Program for iOS development, I knew nothing about programming. I didn't even know what a String was."
+        self.textLabel.text = "BEPiD: that's were it all started. When I entered the Brazilian Education Program for iOS Development, I knew nothing about programming. I didn't even know what a String was."
 
         
         self.image = UIImage(named: "frontbrian.png")!
@@ -165,16 +167,16 @@ class MapVC: UIViewController, MKMapViewDelegate {
             UIView.animateWithDuration(1.5, animations: {
                     self.textLabel.alpha = 0.0
                     self.textLabel.alpha = 1.0
-                       self.textLabel.text = "And after a few months of hard work and challenging projects, I'm proud to say that I can now implement what I design."
+                       self.textLabel.text = "After a few months of hard work and challenging projects, I'm proud to say that I can now implement what I design."
             })
    
         } else if self.u == 3{
-             UIView.animateWithDuration(1.5, animations: {
-                self.textLabel.alpha = 0.0
+            UIView.animateWithDuration(1.5, animations: {
+                    self.textLabel.alpha = 0.0
                 self.textLabel.alpha = 1.0
-                self.textLabel.text = "It feels AWESOME."
-
-            })
+                self.textLabel.text = "And it feels AWESOME."
+                })
+  
         } else if self.u == 4{
            UIView.animateWithDuration(1.5, animations: {
             self.textLabel.alpha = 0.0
@@ -196,7 +198,7 @@ class MapVC: UIViewController, MKMapViewDelegate {
     }
     
     func gosegue() {
-        self.performSegueWithIdentifier("ontoProject", sender: self)
+        self.performSegueWithIdentifier("toBreak", sender: self)
     }
 
     

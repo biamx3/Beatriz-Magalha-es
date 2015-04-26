@@ -66,6 +66,8 @@ class IntroductionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBarHidden = false
+        
         //Set original X
         self.originalX = self.brianView.frame.origin.x
         println("\(self.originalX)")
@@ -117,10 +119,6 @@ class IntroductionVC: UIViewController {
         
         self.x++
         
-        println("\(self.width)")
-        println("\(self.height)")
-        
-        
         //Appearing Introducion Labels
         if self.x == 2 {
             
@@ -131,13 +129,12 @@ class IntroductionVC: UIViewController {
 
             UIView.animateWithDuration(0.4, animations:{
                 self.hiLabel.alpha = 1.0
-                self.x++
                 self.brianView.frame.origin.x = (self.brianView.frame.origin.x*2)
 
              })
             
-        }else if self.x == 4 {
-            
+        }else if self.x == 3 {
+
             self.imageView.animationImages = self.brianJumpArray
             self.imageView.animationDuration = 0.7
             self.imageView.animationRepeatCount = 1
@@ -146,10 +143,9 @@ class IntroductionVC: UIViewController {
 
             UIView.animateWithDuration(0.5, animations:{
                 self.nameLabel.alpha = 1.0
-                    self.x++
                     self.brianView.frame.origin.x = (self.brianView.frame.origin.x*2)
                 })
-        } else if self.x == 6{
+        } else if self.x == 4{
             self.imageView.animationImages = self.brianJumpArray
             self.imageView.animationDuration = 0.7
             self.imageView.animationRepeatCount = 1
@@ -157,21 +153,20 @@ class IntroductionVC: UIViewController {
 
             UIView.animateWithDuration(0.6, animations:{
                 self.ageLabel.alpha = 1.0
-                self.x++
                 self.brianView.frame.origin.x = (self.brianView.frame.origin.x*2)
             })
-            UIView.animateWithDuration(0.8, animations:{
+            UIView.animateWithDuration(0.7, animations:{
                 self.studentLabel.alpha = 1.0
-                self.brianView.frame.origin.x = (self.brianView.frame.origin.x*0.8)
+                self.brianView.frame.origin.x = (self.brianView.frame.origin.x*0.7)
             })
-        } else if self.x == 8{
+        } else if self.x == 5{
             self.imageView.animationImages = self.brianRunArray
             self.imageView.animationDuration = 1.2
             self.imageView.animationRepeatCount = 2
             self.imageView.startAnimating()
             
             UIView.animateWithDuration(2.0, animations:{
-                self.brianView.frame.origin.x = (self.brianView.frame.origin.x*2)
+                self.brianView.frame.origin.x = (self.brianView.frame.origin.x*1.8)
                 self.swiperightLabel.alpha=1.0
                 self.swipeLabel.alpha = 1.0
                 

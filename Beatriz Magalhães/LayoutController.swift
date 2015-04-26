@@ -67,6 +67,9 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBarHidden = false
+
+        
         let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
         navigationController?.navigationBar.tintColor = swiftColor
         navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Geeza Pro", size: 20)!], forState: UIControlState.Normal)

@@ -1,5 +1,5 @@
 //
-//  ProjectController.swift
+//  BreakController.swift
 //  Beatriz Magalhães
 //
 //  Created by Beatriz Melo Mousinho Magalhães on 4/25/15.
@@ -9,8 +9,8 @@
 import UIKit
 
 
-class ProjectController: UICollectionViewController, UICollectionViewDelegate {
-    let reuseIdentifier = "cellCell"
+class BreakController: UICollectionViewController, UICollectionViewDelegate {
+    let reuseIdentifier = "callCell"
     
     //Label
     let label = UILabel()
@@ -47,7 +47,7 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     
     
-    let sectionInsets = UIEdgeInsets(top: 20.0, left: 0.0, bottom: 10.0, right: 0.0)
+    let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
     
     
     override func viewWillAppear(animated: Bool) {
@@ -100,44 +100,44 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
     
     func brianPressed(sender: UIButton!) {
         self.k++
-//        var fortextView = UIImageView()
-//        fortextView.frame = CGRectMake(15,220,110,600 )
-//        self.view.addSubview(fortextView)
-//        var blur = UIBlurEffect(style: UIBlurEffectStyle.Light)
-//        var blurView = UIVisualEffectView(effect: blur)
-//        blurView.frame = fortextView.bounds
-//        fortextView.alpha = 0.7
-//        fortextView.addSubview(blurView)
+        //        var fortextView = UIImageView()
+        //        fortextView.frame = CGRectMake(15,220,110,600 )
+        //        self.view.addSubview(fortextView)
+        //        var blur = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        //        var blurView = UIVisualEffectView(effect: blur)
+        //        blurView.frame = fortextView.bounds
+        //        fortextView.alpha = 0.7
+        //        fortextView.addSubview(blurView)
         
         
         if self.k==2{
             
-
-            self.label.text = "Why, look! That's Brian! Our host from today comes from my first ever app game project: Operation B.R.A.I.N."
+            
+            self.label.text = "I need a Break! was one of my most recent development projects and it was a big milestone for me programming-wise."
             self.label.font = UIFont(name: "Geeza Pro", size: 15)
-            self.label.frame = CGRectMake(10,220,110,600 )
+            self.label.frame = CGRectMake(260, 640, 610, 150)
             self.label.numberOfLines = 3
-            //self.label.textColor = UIColor(red: 255/255, green: 68/255, blue: 43/255, alpha: 1.0)
-            self.label.textColor = UIColor.blackColor()
+            self.label.textColor = UIColor(red: 255/255, green: 173/255, blue: 115/255, alpha: 1.0)
+            //self.label.textColor = UIColor.blackColor()
             self.label.numberOfLines = 25
             self.label.lineBreakMode = .ByWordWrapping
             self.view.addSubview(label)
             self.label.textAlignment = .Center
-
+            
         } else if self.k==3 {
             UIView.animateWithDuration(3.0, animations: {
                 self.label.alpha=0
                 self.label.alpha=1
-                self.label.text = "In our game, we challenge you to put your math skills to the test! You play as Brian, the brain, who is tired of running away from math and has his mind set on becoming the smartest, toughest and strongest brain the world has ever seen. Jump on platforms, get your basic math operations right and soar toward the skies!"
+                self.label.text = "When work, school or life seem too overbearing and you can't bring yourself to read another email or do another boring task, what you really need is a break. And we've got your back! 'I need a break!' will give you the funniest, most unusual and fun break ideas you've ever seen to help you get back on track - in style."
             })
-
+            
         } else if self.k==4{
             UIView.animateWithDuration(3.0, animations: {
                 self.label.alpha=0
                 self.label.alpha=1
-                self.label.text = "I'm proud to be responsible for the visual concept and design of Operation B.R.A.I.N. Also, in case you're wondering... I'm the third one from the left on the team picture."
+                self.label.text = "After you answer three simple questions about your current settings, our app will provide you with a break activity that aims to get your brain juices flowing. Ideally, our breaks should get you out of your comfort-zone - even if just a little bit."
             })
-
+            
             
         } else if self.k==5{
             self.imageView.animationImages = self.brianRunArray
@@ -152,7 +152,7 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
     }
     
     func gosegue() {
-        self.performSegueWithIdentifier("gobreak", sender: self)
+        self.performSegueWithIdentifier("toBrain", sender: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -169,19 +169,19 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
         // Perform your custom actions
         
         var introductionVC:IntroductionVC = IntroductionVC()
-          performSegueWithIdentifier("backBreak", sender: sender)
+        performSegueWithIdentifier("fromBreak", sender: sender)
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 7
+        return 8
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ProjectCollectionViewCell
-        let curr = indexPath.row % 7 + 1
-        let imgName = "brian\(curr).png"
-        cell.pinImage.image = UIImage(named: imgName)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BreakCollectionViewCell
+        let curr = indexPath.row % 8 + 1
+        let imgName = "break\(curr).jpg"
+        cell.pin3Image.image = UIImage(named: imgName)
         
         return cell
     }
@@ -189,7 +189,7 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView!,
         layout collectionViewLayout: UICollectionViewLayout!,
         sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
-            return CGSize(width: self.width*0.8, height: self.height*0.6)
+            return CGSize(width: self.width/3.33, height: self.height)
     }
     
     func collectionView(collectionView: UICollectionView!,
