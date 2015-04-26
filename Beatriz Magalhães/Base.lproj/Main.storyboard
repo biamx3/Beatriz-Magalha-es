@@ -1018,7 +1018,338 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwJ-Dc-fVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804.25" y="2651.25"/>
+            <point key="canvasLocation" x="3044.25" y="2049.75"/>
+        </scene>
+        <!--ByeVC-->
+        <scene sceneID="7yN-MG-9A1">
+            <objects>
+                <viewController id="aUc-Bw-RuF" customClass="ByeVC" customModule="Beatriz_Magalha_es" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WBg-9i-gBI"/>
+                        <viewControllerLayoutGuide type="bottom" id="KpP-GP-KXO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uba-aD-HYR">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thanks for taking the time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d50-S8-6ZK">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="453" id="My3-mp-mYn"/>
+                                    <constraint firstAttribute="height" constant="33" id="YCF-BP-wMC"/>
+                                    <constraint firstAttribute="width" constant="36" id="k44-ke-d2F"/>
+                                    <constraint firstAttribute="height" constant="50" id="yOe-Ep-pln"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.74551678600000004" blue="0.50628263910000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="My3-mp-mYn"/>
+                                        <exclude reference="YCF-BP-wMC"/>
+                                        <exclude reference="k44-ke-d2F"/>
+                                        <exclude reference="yOe-Ep-pln"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="YCF-BP-wMC"/>
+                                        <include reference="k44-ke-d2F"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="My3-mp-mYn"/>
+                                        <exclude reference="YCF-BP-wMC"/>
+                                        <exclude reference="k44-ke-d2F"/>
+                                        <include reference="yOe-Ep-pln"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to get to know me a little better" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD6-Qj-8QN">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="555" id="0L6-dl-xRN"/>
+                                    <constraint firstAttribute="height" constant="39" id="Fns-c8-7pl"/>
+                                    <constraint firstAttribute="height" constant="50" id="ObT-zP-lDn"/>
+                                    <constraint firstAttribute="width" constant="386" id="VOZ-0a-RHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.62944138090000001" blue="0.35717013289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0L6-dl-xRN"/>
+                                        <exclude reference="Fns-c8-7pl"/>
+                                        <exclude reference="ObT-zP-lDn"/>
+                                        <exclude reference="VOZ-0a-RHd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Fns-c8-7pl"/>
+                                        <include reference="VOZ-0a-RHd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="0L6-dl-xRN"/>
+                                        <exclude reference="Fns-c8-7pl"/>
+                                        <include reference="ObT-zP-lDn"/>
+                                        <exclude reference="VOZ-0a-RHd"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my goal is to keep developing," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZw-An-8Ke">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LXf-sv-zD9"/>
+                                    <constraint firstAttribute="width" constant="545" id="t80-AD-Lfc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.53424505460000005" blue="0.24370068680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LXf-sv-zD9"/>
+                                        <exclude reference="t80-AD-Lfc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="LXf-sv-zD9"/>
+                                        <include reference="t80-AD-Lfc"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and dreaming big." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI8-Gp-a1V">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GC8-Lh-D6t"/>
+                                    <constraint firstAttribute="width" constant="324" id="kEo-mP-THZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.4231980213" blue="0.12261307790000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GC8-Lh-D6t"/>
+                                        <exclude reference="kEo-mP-THZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="GC8-Lh-D6t"/>
+                                        <include reference="kEo-mP-THZ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="creating," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nT-Uq-d4R">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="4Hu-0S-Gd4"/>
+                                    <constraint firstAttribute="height" constant="50" id="FYE-bz-qOy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.4231980213" blue="0.12261307790000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Hu-0S-Gd4"/>
+                                        <exclude reference="FYE-bz-qOy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="4Hu-0S-Gd4"/>
+                                        <include reference="FYE-bz-qOy"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hope to meet you in person at the WWDC15!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIR-wd-bhb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="831" id="C2F-m7-ZAO"/>
+                                    <constraint firstAttribute="height" constant="50" id="vdX-4E-fuz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.33067830139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C2F-m7-ZAO"/>
+                                        <exclude reference="vdX-4E-fuz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="C2F-m7-ZAO"/>
+                                        <include reference="vdX-4E-fuz"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWq-Nr-7AS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pn-79-Scr">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="Gqz-6Y-sZo"/>
+                                            <constraint firstAttribute="height" constant="164" id="OBb-RD-VCf"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Gqz-6Y-sZo"/>
+                                                <exclude reference="OBb-RD-VCf"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="Gqz-6Y-sZo"/>
+                                                <include reference="OBb-RD-VCf"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="brianButton:" destination="aUc-Bw-RuF" eventType="touchUpInside" id="se2-7V-fI5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1pn-79-Scr" firstAttribute="leading" secondItem="VWq-Nr-7AS" secondAttribute="leading" constant="8" id="CkA-Cq-DbM"/>
+                                    <constraint firstItem="1pn-79-Scr" firstAttribute="top" secondItem="VWq-Nr-7AS" secondAttribute="top" constant="8" id="L7y-nm-CTr"/>
+                                    <constraint firstAttribute="height" constant="172" id="OQ8-8e-qDh"/>
+                                    <constraint firstAttribute="bottom" secondItem="1pn-79-Scr" secondAttribute="bottom" constant="8" id="eX0-8B-kDc"/>
+                                    <constraint firstAttribute="trailing" secondItem="1pn-79-Scr" secondAttribute="trailing" constant="8" id="pH3-Ad-dFP"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="1pn-79-Scr"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="OQ8-8e-qDh"/>
+                                        <exclude reference="CkA-Cq-DbM"/>
+                                        <exclude reference="L7y-nm-CTr"/>
+                                        <exclude reference="eX0-8B-kDc"/>
+                                        <exclude reference="pH3-Ad-dFP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="1pn-79-Scr"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="OQ8-8e-qDh"/>
+                                        <include reference="CkA-Cq-DbM"/>
+                                        <include reference="L7y-nm-CTr"/>
+                                        <exclude reference="eX0-8B-kDc"/>
+                                        <include reference="pH3-Ad-dFP"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d50-S8-6ZK" firstAttribute="leading" secondItem="uba-aD-HYR" secondAttribute="leadingMargin" constant="66" id="7Fv-O5-EQi"/>
+                            <constraint firstItem="VWq-Nr-7AS" firstAttribute="top" secondItem="QIR-wd-bhb" secondAttribute="bottom" constant="39" id="9Ae-Nl-lAK"/>
+                            <constraint firstItem="ZI8-Gp-a1V" firstAttribute="leading" secondItem="uba-aD-HYR" secondAttribute="leadingMargin" constant="66" id="Kdb-On-Vlv"/>
+                            <constraint firstItem="QD6-Qj-8QN" firstAttribute="leading" secondItem="uba-aD-HYR" secondAttribute="leadingMargin" constant="66" id="NOD-c5-D8L"/>
+                            <constraint firstItem="VWq-Nr-7AS" firstAttribute="top" secondItem="uba-aD-HYR" secondAttribute="topMargin" constant="570" id="QGe-Ob-xrB"/>
+                            <constraint firstItem="QIR-wd-bhb" firstAttribute="top" secondItem="ZI8-Gp-a1V" secondAttribute="bottom" constant="-6" id="Rdm-ar-FGr"/>
+                            <constraint firstItem="d50-S8-6ZK" firstAttribute="top" secondItem="WBg-9i-gBI" secondAttribute="bottom" constant="140" id="UCo-M1-wDa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VWq-Nr-7AS" secondAttribute="trailing" constant="539" id="UNE-uz-tyE"/>
+                            <constraint firstItem="2nT-Uq-d4R" firstAttribute="top" secondItem="rZw-An-8Ke" secondAttribute="bottom" constant="-7" id="WyD-Bl-Kct"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="VWq-Nr-7AS" secondAttribute="bottom" constant="230" id="YOU-vU-CnB"/>
+                            <constraint firstItem="rZw-An-8Ke" firstAttribute="top" secondItem="QD6-Qj-8QN" secondAttribute="bottom" constant="3" id="aDd-ZK-oeg"/>
+                            <constraint firstItem="rZw-An-8Ke" firstAttribute="leading" secondItem="uba-aD-HYR" secondAttribute="leadingMargin" constant="66" id="aZN-UT-kmq"/>
+                            <constraint firstItem="QD6-Qj-8QN" firstAttribute="top" secondItem="d50-S8-6ZK" secondAttribute="bottom" constant="-6" id="dAH-ff-nRf"/>
+                            <constraint firstItem="KpP-GP-KXO" firstAttribute="top" secondItem="VWq-Nr-7AS" secondAttribute="bottom" constant="67" id="jYQ-by-Hbh"/>
+                            <constraint firstItem="QIR-wd-bhb" firstAttribute="leading" secondItem="uba-aD-HYR" secondAttribute="leadingMargin" constant="66" id="kdR-mF-dKO"/>
+                            <constraint firstItem="VWq-Nr-7AS" firstAttribute="leading" secondItem="uba-aD-HYR" secondAttribute="leadingMargin" constant="85" id="qoX-Tn-gWH"/>
+                            <constraint firstItem="ZI8-Gp-a1V" firstAttribute="top" secondItem="2nT-Uq-d4R" secondAttribute="bottom" constant="-10" id="u9W-yG-ubR"/>
+                            <constraint firstItem="2nT-Uq-d4R" firstAttribute="leading" secondItem="uba-aD-HYR" secondAttribute="leadingMargin" constant="66" id="x2J-4k-6Tt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="d50-S8-6ZK"/>
+                                <exclude reference="QD6-Qj-8QN"/>
+                                <exclude reference="rZw-An-8Ke"/>
+                                <exclude reference="ZI8-Gp-a1V"/>
+                                <exclude reference="2nT-Uq-d4R"/>
+                                <exclude reference="QIR-wd-bhb"/>
+                                <exclude reference="VWq-Nr-7AS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7Fv-O5-EQi"/>
+                                <exclude reference="UCo-M1-wDa"/>
+                                <exclude reference="NOD-c5-D8L"/>
+                                <exclude reference="dAH-ff-nRf"/>
+                                <exclude reference="aDd-ZK-oeg"/>
+                                <exclude reference="aZN-UT-kmq"/>
+                                <exclude reference="WyD-Bl-Kct"/>
+                                <exclude reference="x2J-4k-6Tt"/>
+                                <exclude reference="Kdb-On-Vlv"/>
+                                <exclude reference="u9W-yG-ubR"/>
+                                <exclude reference="Rdm-ar-FGr"/>
+                                <exclude reference="kdR-mF-dKO"/>
+                                <exclude reference="9Ae-Nl-lAK"/>
+                                <exclude reference="QGe-Ob-xrB"/>
+                                <exclude reference="UNE-uz-tyE"/>
+                                <exclude reference="YOU-vU-CnB"/>
+                                <exclude reference="qoX-Tn-gWH"/>
+                                <exclude reference="jYQ-by-Hbh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="d50-S8-6ZK"/>
+                                <include reference="QD6-Qj-8QN"/>
+                                <include reference="rZw-An-8Ke"/>
+                                <include reference="ZI8-Gp-a1V"/>
+                                <include reference="2nT-Uq-d4R"/>
+                                <include reference="QIR-wd-bhb"/>
+                                <include reference="VWq-Nr-7AS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7Fv-O5-EQi"/>
+                                <include reference="UCo-M1-wDa"/>
+                                <include reference="NOD-c5-D8L"/>
+                                <include reference="dAH-ff-nRf"/>
+                                <include reference="aDd-ZK-oeg"/>
+                                <include reference="aZN-UT-kmq"/>
+                                <include reference="WyD-Bl-Kct"/>
+                                <include reference="x2J-4k-6Tt"/>
+                                <include reference="Kdb-On-Vlv"/>
+                                <include reference="u9W-yG-ubR"/>
+                                <include reference="Rdm-ar-FGr"/>
+                                <include reference="kdR-mF-dKO"/>
+                                <include reference="9Ae-Nl-lAK"/>
+                                <exclude reference="QGe-Ob-xrB"/>
+                                <include reference="UNE-uz-tyE"/>
+                                <exclude reference="YOU-vU-CnB"/>
+                                <include reference="qoX-Tn-gWH"/>
+                                <include reference="jYQ-by-Hbh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="brianView" destination="VWq-Nr-7AS" id="FcN-Ia-ddg"/>
+                        <outlet property="creatingLabel" destination="2nT-Uq-d4R" id="udu-AQ-xgX"/>
+                        <outlet property="dreamingLabel" destination="ZI8-Gp-a1V" id="LiJ-vr-XKq"/>
+                        <outlet property="goalLabel" destination="rZw-An-8Ke" id="qso-dZ-ags"/>
+                        <outlet property="knowLabel" destination="QD6-Qj-8QN" id="kqi-XC-kAc"/>
+                        <outlet property="thanksLabel" destination="d50-S8-6ZK" id="7Xu-KR-QNl"/>
+                        <outlet property="wwdcLabel" destination="QIR-wd-bhb" id="wi4-iK-R3n"/>
+                        <segue destination="ayj-g9-vcP" kind="show" identifier="byeMenu" id="kLy-Pe-Wc6"/>
+                        <segue destination="YPz-w9-e4G" kind="show" identifier="backProject" id="wuR-gc-4PU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qV3-Bk-Ab2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710.75" y="2915.25"/>
         </scene>
         <!--Project Controller-->
         <scene sceneID="Sac-Pm-iSR">
@@ -1080,7 +1411,6 @@
                                 </variation>
                                 <connections>
                                     <outlet property="pinImage" destination="bHk-Fl-zk5" id="WR2-vg-v6f"/>
-                                    <segue destination="dBy-aB-QAK" kind="show" identifier="toMe" id="ClG-rZ-SAQ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -1095,11 +1425,12 @@
                     <connections>
                         <segue destination="lc4-pi-VzL" kind="show" identifier="backBreak" id="mfS-tK-mSt"/>
                         <segue destination="ayj-g9-vcP" kind="show" identifier="brainMenu" id="jjU-Gr-P5M"/>
+                        <segue destination="aUc-Bw-RuF" kind="show" identifier="toBye" id="dkc-As-Siq"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYd-Sq-ZBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676.75" y="1712.25"/>
+            <point key="canvasLocation" x="2454.75" y="2957.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RmU-cN-OD1">
@@ -1117,7 +1448,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7iS-Ko-Iiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843.75" y="2595.75"/>
+            <point key="canvasLocation" x="191.25" y="2525.25"/>
         </scene>
         <!--MeVC-->
         <scene sceneID="sdI-GR-cCY">
@@ -1413,13 +1744,13 @@ It know it's still a bit rough around the edges, but I learned the essence and, 
                         <outlet property="eView" destination="BSf-Ah-5HR" id="RZO-RD-oOJ"/>
                         <outlet property="linkView" destination="guf-jF-i3m" id="D9H-1B-oSV"/>
                         <outlet property="meLabel" destination="A5W-x9-4UU" id="8C8-BA-uYv"/>
-                        <outlet property="portView" destination="guf-jF-i3m" id="vAK-qo-Yeg"/>
+                        <outlet property="portView" destination="mAg-mX-IVN" id="FfH-YF-bC7"/>
                         <segue destination="ayj-g9-vcP" kind="show" identifier="meMenu" id="XiX-Wj-6gc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRR-yn-z3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752.75" y="2814"/>
+            <point key="canvasLocation" x="813.75" y="3055.5"/>
         </scene>
     </scenes>
     <resources>
@@ -1430,11 +1761,11 @@ It know it's still a bit rough around the edges, but I learned the essence and, 
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aKg-f9-BaO"/>
-        <segue reference="jkD-MM-WQy"/>
-        <segue reference="XiX-Wj-6gc"/>
-        <segue reference="KbF-5T-d8V"/>
-        <segue reference="d2Z-g9-m1e"/>
+        <segue reference="soZ-iw-WBr"/>
         <segue reference="Fr7-UC-x1k"/>
+        <segue reference="kLy-Pe-Wc6"/>
+        <segue reference="wuR-gc-4PU"/>
+        <segue reference="mfS-tK-mSt"/>
         <segue reference="A3Y-Qs-4hh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>

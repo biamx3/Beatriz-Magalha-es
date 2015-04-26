@@ -10,11 +10,11 @@ import UIKit
 
 class MeVC: UIViewController {
 
-    @IBOutlet weak var portView: UIView!
+
     @IBOutlet weak var linkView: UIView!
     @IBOutlet weak var eView: UIView!
     @IBOutlet weak var meLabel: UILabel!
-    
+    @IBOutlet weak var portView: UIView!
     //Screen size
     var width = UIScreen.mainScreen().bounds.size.width
     var height = UIScreen.mainScreen().bounds.size.height
@@ -41,7 +41,7 @@ class MeVC: UIViewController {
         //  Me Label
         self.meLabel.frame.origin.x = self.width
         self.meLabel.alpha = 0.0
-        UIView.animateWithDuration(3.0, delay: 0.025, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+        UIView.animateWithDuration(3.0, delay: 0.2, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.meLabel.alpha = 1.0
             self.meLabel.frame.origin.x = 440
             
@@ -51,7 +51,7 @@ class MeVC: UIViewController {
         //  Link View
         self.linkView.frame.origin.x = self.width
         self.linkView.alpha = 0.0
-        UIView.animateWithDuration(3.0, delay: 0.05, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+        UIView.animateWithDuration(3.0, delay: 0.3, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.linkView.alpha = 0.8
             self.linkView.frame.origin.x = 440
             
@@ -60,7 +60,7 @@ class MeVC: UIViewController {
         //  EView
         self.eView.frame.origin.x = self.width
         self.eView.alpha = 0.0
-        UIView.animateWithDuration(3.0, delay: 0.075, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+        UIView.animateWithDuration(3.0, delay: 0.4, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.eView.alpha = 0.8
             self.eView.frame.origin.x = 440
             
@@ -70,7 +70,7 @@ class MeVC: UIViewController {
         //  PortView
         self.portView.frame.origin.x = self.width
         self.portView.alpha = 0.0
-        UIView.animateWithDuration(3.0, delay: 0.025, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+        UIView.animateWithDuration(3.0, delay: 0.5, usingSpringWithDamping: 0.55, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.portView.alpha = 0.8
             self.portView.frame.origin.x = 440
             
@@ -82,6 +82,10 @@ class MeVC: UIViewController {
         performSegueWithIdentifier("meMenu", sender: self)
     }
 
+    func back(sender: UIBarButtonItem) {
+        
+        performSegueWithIdentifier("meMenu", sender: sender)
+    }
 
 
     override func didReceiveMemoryWarning() {

@@ -102,7 +102,7 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
     }
     
     func sayHello(){
-        performSegueWithIdentifier("toMe", sender: self)
+        performSegueWithIdentifier("brainMenu", sender: self)
     }
     
     
@@ -160,7 +160,7 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
     }
     
     func gosegue() {
-        self.performSegueWithIdentifier("toMe", sender: self)
+        self.performSegueWithIdentifier("toBye", sender: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

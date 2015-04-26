@@ -30,6 +30,7 @@
 		E15120181AEC9CAD00430F71 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15120171AEC9CAD00430F71 /* MenuVC.swift */; };
 		E151201E1AED41C400430F71 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E151201D1AED41C400430F71 /* me.jpg */; };
 		E15120201AED446400430F71 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151201F1AED446400430F71 /* MeVC.swift */; };
+		E15120241AED645400430F71 /* ByeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15120231AED645400430F71 /* ByeVC.swift */; };
 		E155799C1AEAB9B100D90F94 /* artwork5.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579941AEAB9B100D90F94 /* artwork5.png */; };
 		E155799E1AEAB9B100D90F94 /* artwork3.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579961AEAB9B100D90F94 /* artwork3.png */; };
 		E15579A01AEAB9B100D90F94 /* artwork6.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579981AEAB9B100D90F94 /* artwork6.png */; };
@@ -103,6 +104,7 @@
 		E15120171AEC9CAD00430F71 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		E151201D1AED41C400430F71 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
 		E151201F1AED446400430F71 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		E15120231AED645400430F71 /* ByeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByeVC.swift; sourceTree = "<group>"; };
 		E15579941AEAB9B100D90F94 /* artwork5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork5.png; sourceTree = "<group>"; };
 		E15579961AEAB9B100D90F94 /* artwork3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork3.png; sourceTree = "<group>"; };
 		E15579981AEAB9B100D90F94 /* artwork6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork6.png; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				E1511FE11AEC6F0400430F71 /* ProjectController.swift */,
 				E151201F1AED446400430F71 /* MeVC.swift */,
 				E1511FE31AEC704D00430F71 /* ProjectCollectionViewCell.swift */,
+				E15120231AED645400430F71 /* ByeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1511FD61AEC263500430F71 /* MyAnnotation.swift in Sources */,
+				E15120241AED645400430F71 /* ByeVC.swift in Sources */,
 				E18821181AE99BD50080800E /* LayoutController.swift in Sources */,
 				E15579AC1AEC1EB300D90F94 /* MapVC.swift in Sources */,
 				E15579A81AEAEC8500D90F94 /* ConfessionVC.swift in Sources */,
