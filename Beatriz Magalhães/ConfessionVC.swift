@@ -188,6 +188,13 @@ class ConfessionVC: UIViewController {
         
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "<back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
+        let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = swiftColor
+        
+        let backButton = UIBarButtonItem(title: "< back", style: UIBarButtonItemStyle.Plain, target: self, action: "goBack:")
+        navigationItem.leftBarButtonItem = backButton
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Geeza Pro", size: 20)!], forState: UIControlState.Normal)
+
         self.navigationItem.leftBarButtonItem = newBackButton;
         
         //Swipe
@@ -251,27 +258,27 @@ class ConfessionVC: UIViewController {
         self.w++
         if self.w == 2{
             self.imageView.animationImages = self.brianJumpArray
-            self.imageView.animationDuration = 0.7
+            self.imageView.animationDuration = 0.9
             self.imageView.animationRepeatCount = 1
             self.imageView.startAnimating()
             
-            UIView.animateWithDuration(0.7, delay: 0.0, options: nil, animations: {
+            UIView.animateWithDuration(0.8, delay: 0.0, options: nil, animations: {
                 self.imageView.frame.origin.x = (self.imageView.frame.origin.x*3.2)
                 self.imageView.frame.origin.y = (self.imageView.frame.origin.y+72)
                 }, completion: {finished in
                     self.imageView.animationImages = self.brianJumpArray
-                    self.imageView.animationDuration = 0.7
+                    self.imageView.animationDuration = 0.8
                     self.imageView.animationRepeatCount = 1
                     self.imageView.startAnimating()
-                        UIView.animateWithDuration(1.0, delay: 0.0, options: nil, animations: {
-                            self.imageView.frame.origin.x = (self.imageView.frame.origin.x+80)
+                        UIView.animateWithDuration(0.7, delay: 0.0, options: nil, animations: {
+                            self.imageView.frame.origin.x = (self.imageView.frame.origin.x+100)
                             self.imageView.frame.origin.y = (self.imageView.frame.origin.y+60)
                             }, completion: {finished in
                                 self.imageView.animationImages = self.brianJumpArray
-                                self.imageView.animationDuration = 0.7
+                                self.imageView.animationDuration = 0.8
                                 self.imageView.animationRepeatCount = 1
                                 self.imageView.startAnimating()
-                                    UIView.animateWithDuration(1.0, delay: 0.0, options: nil, animations: {
+                                    UIView.animateWithDuration(0.9, delay: 0.0, options: nil, animations: {
                                         self.imageView.frame.origin.x = (self.imageView.frame.origin.x+120)
                                         self.imageView.frame.origin.y = (self.imageView.frame.origin.y+40)
                                         self.brian2Button.frame = self.imageView.frame

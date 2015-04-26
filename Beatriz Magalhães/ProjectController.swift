@@ -1,16 +1,16 @@
 //
-//  TraditionalCollectionVC.swift
+//  ProjectController.swift
 //  Beatriz Magalhães
 //
-//  Created by Beatriz Melo Mousinho Magalhães on 4/23/15.
+//  Created by Beatriz Melo Mousinho Magalhães on 4/25/15.
 //  Copyright (c) 2015 Beatriz Melo Mousinho Magalhães. All rights reserved.
 //
 
 import UIKit
 
-let reuseIdentifier = "collCell"
 
-class LayoutController: UICollectionViewController, UICollectionViewDelegate {
+class ProjectController: UICollectionViewController, UICollectionViewDelegate {
+    let reuseIdentifier = "cellCell"
     
     //Variable for Brian Button
     var k:CGFloat = 1
@@ -50,10 +50,6 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         
-        //CUSTOMIZING NAVIGATION BAR
-        
- 
-
         //Brian
         UIView.animateWithDuration(1.0, animations:{
             self.imageView.frame = CGRectMake(102,570,144,172)
@@ -63,19 +59,19 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
             self.imageView.startAnimating()
         })
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
         navigationController?.navigationBar.tintColor = swiftColor
         navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Geeza Pro", size: 20)!], forState: UIControlState.Normal)
-
+        
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "<back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
         self.navigationItem.leftBarButtonItem = newBackButton;
         navigationController?.navigationBar.tintColor = swiftColor
-
+        
         
         self.image = UIImage(named: "frontbrian.png")!
         self.imageView = UIImageView(image: image)
@@ -89,8 +85,8 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
         brian2Button.frame = CGRectMake(102,570,144,172)
         brian2Button.addTarget(self, action: "brianPressed:", forControlEvents: .TouchUpInside)
         self.view.addSubview(brian2Button)
-
-     
+        
+        
         //Layout customizing
         layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
         layout.minimumInteritemSpacing = 0
@@ -133,21 +129,21 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
                 self.imageView.frame.origin.x = self.imageView.frame.origin.x*2
                 println("\(self.imageView.frame.origin.x)")
                 
-            var timer = NSTimer.scheduledTimerWithTimeInterval(0.7, target: self, selector: Selector("update"), userInfo: nil, repeats: false)
+                var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("update"), userInfo: nil, repeats: false)
             })
         }
     }
     
     func update() {
-        self.performSegueWithIdentifier("thirdsegue", sender: self)
+        self.performSegueWithIdentifier("ontoProject", sender: self)
     }
-
     
-//    func blankPressed(sender: UIButton!){
-//            performSegueWithIdentifier("secondsegue", sender: sender)
-//    }
     
-
+    //    func blankPressed(sender: UIButton!){
+    //            performSegueWithIdentifier("secondsegue", sender: sender)
+    //    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -167,7 +163,7 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
         // ...
         // Go back to the previous ViewController
         //self.navigationController?.popViewControllerAnimated(true)
-//        self.navigationController?.popToViewController(introductionVC, animated: false)
+        //        self.navigationController?.popToViewController(introductionVC, animated: false)
         
         performSegueWithIdentifier("back1", sender: sender)
     }
@@ -178,9 +174,9 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ProjectCollectionViewCell
         let curr = indexPath.row % 6 + 1
-        let imgName = "artwork\(curr).png"
+        let imgName = "brian\(curr).png"
         cell.pinImage.image = UIImage(named: imgName)
         
         return cell
@@ -201,9 +197,7 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
     func handleSwipes(sender:UISwipeGestureRecognizer) {
         if (sender.direction == .Right) {
             println("Swipe Right")
-            performSegueWithIdentifier("thirdsegue", sender: sender)
-            
+            performSegueWithIdentifier("backtomap", sender: sender)
         }
     }
-
 }

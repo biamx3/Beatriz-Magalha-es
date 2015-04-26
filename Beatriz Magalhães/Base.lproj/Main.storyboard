@@ -647,54 +647,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQx-32-0hB">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="19"/>
-                                <color key="textColor" red="1" green="0.37855202430000001" blue="0.16781555770000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="295" y="640" width="463" height="62"/>
-                                </variation>
-                            </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rDv-9O-Qbs">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQx-32-0hB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rDv-9O-Qbs" secondAttribute="trailing" id="0u3-F0-lCO"/>
-                            <constraint firstItem="SQx-32-0hB" firstAttribute="top" secondItem="rDv-9O-Qbs" secondAttribute="bottom" constant="46" id="2DB-7u-d2s"/>
                             <constraint firstItem="rDv-9O-Qbs" firstAttribute="top" secondItem="gEI-2z-Boq" secondAttribute="top" id="5Wk-WI-YRp"/>
                             <constraint firstItem="syv-A6-pUX" firstAttribute="top" secondItem="rDv-9O-Qbs" secondAttribute="bottom" constant="206" id="DwM-kU-5mq"/>
+                            <constraint firstItem="SQx-32-0hB" firstAttribute="top" secondItem="rDv-9O-Qbs" secondAttribute="bottom" constant="-4" id="MNe-n2-ZWS"/>
                             <constraint firstItem="rDv-9O-Qbs" firstAttribute="leading" secondItem="gEI-2z-Boq" secondAttribute="leading" id="Wk1-GL-MhY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SQx-32-0hB" secondAttribute="trailing" constant="26" id="gOO-XA-Cpv"/>
+                            <constraint firstItem="SQx-32-0hB" firstAttribute="leading" secondItem="gEI-2z-Boq" secondAttribute="leadingMargin" constant="393" id="Yyj-5T-xlQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SQx-32-0hB" secondAttribute="trailing" constant="26" id="he9-eH-Dvp"/>
+                            <constraint firstItem="syv-A6-pUX" firstAttribute="top" secondItem="SQx-32-0hB" secondAttribute="bottom" constant="20" id="ykF-Pq-7tH"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="SQx-32-0hB"/>
                                 <exclude reference="rDv-9O-Qbs"/>
+                                <exclude reference="SQx-32-0hB"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0u3-F0-lCO"/>
                                 <exclude reference="5Wk-WI-YRp"/>
                                 <exclude reference="Wk1-GL-MhY"/>
-                                <exclude reference="2DB-7u-d2s"/>
-                                <exclude reference="gOO-XA-Cpv"/>
+                                <exclude reference="MNe-n2-ZWS"/>
+                                <exclude reference="Yyj-5T-xlQ"/>
+                                <exclude reference="he9-eH-Dvp"/>
                                 <exclude reference="DwM-kU-5mq"/>
+                                <exclude reference="ykF-Pq-7tH"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="SQx-32-0hB"/>
                                 <include reference="rDv-9O-Qbs"/>
+                                <include reference="SQx-32-0hB"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0u3-F0-lCO"/>
                                 <include reference="5Wk-WI-YRp"/>
                                 <include reference="Wk1-GL-MhY"/>
-                                <include reference="2DB-7u-d2s"/>
-                                <include reference="gOO-XA-Cpv"/>
+                                <include reference="MNe-n2-ZWS"/>
+                                <include reference="Yyj-5T-xlQ"/>
+                                <include reference="he9-eH-Dvp"/>
                                 <include reference="DwM-kU-5mq"/>
+                                <include reference="ykF-Pq-7tH"/>
                             </mask>
                         </variation>
                     </view>
@@ -702,11 +705,83 @@
                         <outlet property="mapView" destination="rDv-9O-Qbs" id="HOw-MY-zcr"/>
                         <outlet property="textLabel" destination="SQx-32-0hB" id="7he-Yq-ZSK"/>
                         <segue destination="mFp-a5-gCY" kind="show" identifier="backtoConfession" id="bwT-9f-f2l"/>
+                        <segue destination="YPz-w9-e4G" kind="show" identifier="ontoProject" id="ZKR-j5-4ci"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Y-NW-8Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2590.5" y="515.25"/>
+        </scene>
+        <!--Project Controller-->
+        <scene sceneID="Sac-Pm-iSR">
+            <objects>
+                <collectionViewController id="YPz-w9-e4G" customClass="ProjectController" customModule="Beatriz_Magalha_es" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7HC-fa-qUT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="70d-UF-261">
+                            <size key="itemSize" width="716" height="806"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellCell" id="Tbc-GJ-0es" customClass="ProjectCollectionViewCell" customModule="Beatriz_Magalha_es" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="716" height="806"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brian3.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Fl-zk5">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="bHk-Fl-zk5" firstAttribute="leading" secondItem="Tbc-GJ-0es" secondAttribute="leadingMargin" id="9UW-NX-Sco"/>
+                                    <constraint firstItem="bHk-Fl-zk5" firstAttribute="top" secondItem="Tbc-GJ-0es" secondAttribute="topMargin" id="XE1-PM-a9F"/>
+                                    <constraint firstItem="bHk-Fl-zk5" firstAttribute="trailing" secondItem="Tbc-GJ-0es" secondAttribute="trailingMargin" id="XH9-BE-Rci"/>
+                                    <constraint firstItem="bHk-Fl-zk5" firstAttribute="bottom" secondItem="Tbc-GJ-0es" secondAttribute="bottomMargin" id="qqN-Qa-JOX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="bHk-Fl-zk5"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="9UW-NX-Sco"/>
+                                        <exclude reference="XE1-PM-a9F"/>
+                                        <exclude reference="XH9-BE-Rci"/>
+                                        <exclude reference="qqN-Qa-JOX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="bHk-Fl-zk5"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="9UW-NX-Sco"/>
+                                        <include reference="XE1-PM-a9F"/>
+                                        <include reference="XH9-BE-Rci"/>
+                                        <include reference="qqN-Qa-JOX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="pinImage" destination="bHk-Fl-zk5" id="WR2-vg-v6f"/>
+                                    <segue destination="i3e-Yy-16y" kind="show" identifier="backtomap" id="ykf-fC-6eY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="YPz-w9-e4G" id="Enh-y0-JFZ"/>
+                            <outlet property="delegate" destination="YPz-w9-e4G" id="Qxf-ha-Sw0"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYd-Sq-ZBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534.25" y="1316.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nep-Ol-ut7">
@@ -729,10 +804,12 @@
     </scenes>
     <resources>
         <image name="artwork1.png" width="2136" height="1337"/>
+        <image name="brian3.png" width="1240" height="940"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lNc-oP-fA8"/>
-        <segue reference="soZ-iw-WBr"/>
+        <segue reference="Nj7-Cf-LbW"/>
         <segue reference="bwT-9f-f2l"/>
+        <segue reference="ykf-fC-6eY"/>
     </inferredMetricsTieBreakers>
 </document>

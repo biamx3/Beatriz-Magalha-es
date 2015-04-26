@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E1511FD61AEC263500430F71 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1511FD51AEC263500430F71 /* MyAnnotation.swift */; };
+		E1511FE21AEC6F0400430F71 /* ProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1511FE11AEC6F0400430F71 /* ProjectController.swift */; };
+		E1511FE41AEC704D00430F71 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1511FE31AEC704D00430F71 /* ProjectCollectionViewCell.swift */; };
+		E1511FEC1AEC71D700430F71 /* brian1.png in Resources */ = {isa = PBXBuildFile; fileRef = E1511FE61AEC71D700430F71 /* brian1.png */; };
+		E1511FED1AEC71D700430F71 /* brian2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1511FE71AEC71D700430F71 /* brian2.png */; };
+		E1511FEE1AEC71D700430F71 /* brian3.png in Resources */ = {isa = PBXBuildFile; fileRef = E1511FE81AEC71D700430F71 /* brian3.png */; };
+		E1511FEF1AEC71D700430F71 /* brian4.png in Resources */ = {isa = PBXBuildFile; fileRef = E1511FE91AEC71D700430F71 /* brian4.png */; };
+		E1511FF01AEC71D700430F71 /* brian5.png in Resources */ = {isa = PBXBuildFile; fileRef = E1511FEA1AEC71D700430F71 /* brian5.png */; };
+		E1511FF11AEC71D700430F71 /* brian6.png in Resources */ = {isa = PBXBuildFile; fileRef = E1511FEB1AEC71D700430F71 /* brian6.png */; };
 		E155799C1AEAB9B100D90F94 /* artwork5.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579941AEAB9B100D90F94 /* artwork5.png */; };
 		E155799E1AEAB9B100D90F94 /* artwork3.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579961AEAB9B100D90F94 /* artwork3.png */; };
 		E15579A01AEAB9B100D90F94 /* artwork6.png in Resources */ = {isa = PBXBuildFile; fileRef = E15579981AEAB9B100D90F94 /* artwork6.png */; };
@@ -59,6 +67,14 @@
 
 /* Begin PBXFileReference section */
 		E1511FD51AEC263500430F71 /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
+		E1511FE11AEC6F0400430F71 /* ProjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectController.swift; sourceTree = "<group>"; };
+		E1511FE31AEC704D00430F71 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1511FE61AEC71D700430F71 /* brian1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brian1.png; sourceTree = "<group>"; };
+		E1511FE71AEC71D700430F71 /* brian2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brian2.png; sourceTree = "<group>"; };
+		E1511FE81AEC71D700430F71 /* brian3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brian3.png; sourceTree = "<group>"; };
+		E1511FE91AEC71D700430F71 /* brian4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brian4.png; sourceTree = "<group>"; };
+		E1511FEA1AEC71D700430F71 /* brian5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brian5.png; sourceTree = "<group>"; };
+		E1511FEB1AEC71D700430F71 /* brian6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brian6.png; sourceTree = "<group>"; };
 		E15579941AEAB9B100D90F94 /* artwork5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork5.png; sourceTree = "<group>"; };
 		E15579961AEAB9B100D90F94 /* artwork3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork3.png; sourceTree = "<group>"; };
 		E15579981AEAB9B100D90F94 /* artwork6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork6.png; sourceTree = "<group>"; };
@@ -130,6 +146,7 @@
 		E1511FD91AEC27E600430F71 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E1511FE51AEC71B000430F71 /* Project Brian */,
 				E178C7EC1AE821C7005580E3 /* Main.storyboard */,
 				E178C7EF1AE821C7005580E3 /* Images.xcassets */,
 				E1C0326D1AE938440048932B /* Jump Frames */,
@@ -147,8 +164,23 @@
 				E188211B1AE9A59F0080800E /* CollectionViewCell.swift */,
 				E15579A71AEAEC8500D90F94 /* ConfessionVC.swift */,
 				E15579AB1AEC1EB300D90F94 /* MapVC.swift */,
+				E1511FE11AEC6F0400430F71 /* ProjectController.swift */,
+				E1511FE31AEC704D00430F71 /* ProjectCollectionViewCell.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1511FE51AEC71B000430F71 /* Project Brian */ = {
+			isa = PBXGroup;
+			children = (
+				E1511FE61AEC71D700430F71 /* brian1.png */,
+				E1511FE71AEC71D700430F71 /* brian2.png */,
+				E1511FE81AEC71D700430F71 /* brian3.png */,
+				E1511FE91AEC71D700430F71 /* brian4.png */,
+				E1511FEA1AEC71D700430F71 /* brian5.png */,
+				E1511FEB1AEC71D700430F71 /* brian6.png */,
+			);
+			name = "Project Brian";
 			sourceTree = "<group>";
 		};
 		E178C7DA1AE821C6005580E3 = {
@@ -344,6 +376,8 @@
 				E1C032961AE956870048932B /* jump6.png in Resources */,
 				E155799E1AEAB9B100D90F94 /* artwork3.png in Resources */,
 				E18821021AE976360080800E /* run9.png in Resources */,
+				E1511FF11AEC71D700430F71 /* brian6.png in Resources */,
+				E1511FEC1AEC71D700430F71 /* brian1.png in Resources */,
 				E18821041AE976360080800E /* run11.png in Resources */,
 				E1C032931AE956870048932B /* jump3.png in Resources */,
 				E1C032921AE956870048932B /* jump2.png in Resources */,
@@ -357,12 +391,16 @@
 				E1C032941AE956870048932B /* jump4.png in Resources */,
 				E18820FF1AE976360080800E /* run6.png in Resources */,
 				E178C7F31AE821C7005580E3 /* LaunchScreen.xib in Resources */,
+				E1511FF01AEC71D700430F71 /* brian5.png in Resources */,
 				E1C032951AE956870048932B /* jump5.png in Resources */,
 				E18821001AE976360080800E /* run7.png in Resources */,
 				E18821011AE976360080800E /* run8.png in Resources */,
 				E1C032901AE956870048932B /* frontbrian.png in Resources */,
+				E1511FEE1AEC71D700430F71 /* brian3.png in Resources */,
 				E1C032971AE956870048932B /* jump7.png in Resources */,
 				E18821051AE976360080800E /* run12.png in Resources */,
+				E1511FED1AEC71D700430F71 /* brian2.png in Resources */,
+				E1511FEF1AEC71D700430F71 /* brian4.png in Resources */,
 				E18820FD1AE976360080800E /* run4.png in Resources */,
 				E18820FC1AE976360080800E /* run3.png in Resources */,
 				E178C7F01AE821C7005580E3 /* Images.xcassets in Resources */,
@@ -389,6 +427,8 @@
 				E15579AC1AEC1EB300D90F94 /* MapVC.swift in Sources */,
 				E15579A81AEAEC8500D90F94 /* ConfessionVC.swift in Sources */,
 				E178C7EB1AE821C7005580E3 /* IntroductionVC.swift in Sources */,
+				E1511FE41AEC704D00430F71 /* ProjectCollectionViewCell.swift in Sources */,
+				E1511FE21AEC6F0400430F71 /* ProjectController.swift in Sources */,
 				E188211C1AE9A59F0080800E /* CollectionViewCell.swift in Sources */,
 				E178C7E91AE821C7005580E3 /* AppDelegate.swift in Sources */,
 			);

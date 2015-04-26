@@ -12,5 +12,7 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell, UICollectionViewDelegate {
     
      @IBOutlet weak var pinImage: UIImageView!
+
     
+
 }

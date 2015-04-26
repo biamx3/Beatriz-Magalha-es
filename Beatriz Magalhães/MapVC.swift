@@ -53,10 +53,15 @@ class MapVC: UIViewController, MKMapViewDelegate {
     
 
     //Milestone locations
-    let bepidLocation = CLLocation(latitude: -22.977914, longitude: -43.231685
-)
+    let bepidLocation = CLLocation(latitude: -22.977864, longitude: -43.231646)
  
     override func viewWillAppear(animated: Bool) {
+        
+        UIView.animateWithDuration(3.0, animations: {
+            self.textLabel.alpha = 1.0
+            
+            
+        })
         //Brian
         UIView.animateWithDuration(1.0, animations:{
             self.imageView.frame = CGRectMake(102,570,144,172)
@@ -71,11 +76,11 @@ class MapVC: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIView.animateWithDuration(2, animations: {
-            self.textLabel.alpha = 1.0
-            self.textLabel.frame = 1.0
-        })
-        self.textLabel.text = "This is were it all started. When I entered the Brazilian Education Program for iOS development, I knew nothing about programming. I didn't even know what a String was."
+        self.textLabel.alpha = 0
+        
+
+        self.textLabel.text = "BEPiD: that's were it all started. When I entered the Brazilian Education Program for iOS development, I knew nothing about programming. I didn't even know what a String was."
+
         
         self.image = UIImage(named: "frontbrian.png")!
         self.imageView = UIImageView(image: image)
@@ -94,15 +99,26 @@ class MapVC: UIViewController, MKMapViewDelegate {
         //Navigation Bar Item
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "<back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
+        let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = swiftColor
+        
+        let backButton = UIBarButtonItem(title: "< back", style: UIBarButtonItemStyle.Plain, target: self, action: "goBack:")
+        navigationItem.leftBarButtonItem = backButton
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Geeza Pro", size: 20)!], forState: UIControlState.Normal)
+        
         self.navigationItem.leftBarButtonItem = newBackButton;
 
         
         //Regions and Annotations
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(bepidLocation.coordinate, 300, 300)
+        var coordinateRegion = MKCoordinateRegionMakeWithDistance(bepidLocation.coordinate, 200, 200)
         self.mapView.setRegion(coordinateRegion, animated: true)
         let ann = MyAnnotation(title: "BEPiD", subtitle: "Brazilian Education Program for iOS Development", coordinate:CLLocationCoordinate2DMake(bepidLocation.coordinate.latitude,bepidLocation.coordinate.longitude))
         self.mapView.addAnnotation(ann)
-        var circle: MKCircle = MKCircle(centerCoordinate: CLLocationCoordinate2D(latitude: bepidLocation.coordinate.latitude, longitude:bepidLocation.coordinate.longitude), radius: 100)
+        
+        
+        
+        
+        var circle: MKCircle = MKCircle(centerCoordinate: CLLocationCoordinate2D(latitude: bepidLocation.coordinate.latitude, longitude:bepidLocation.coordinate.longitude), radius: 50)
         self.mapView.addOverlay(circle)
         
         var mapType: MKMapType
@@ -134,6 +150,8 @@ class MapVC: UIViewController, MKMapViewDelegate {
                 
                 var imageView = UIImageView(image: UIImage(contentsOfFile: "image.png"))
                 view.leftCalloutAccessoryView = imageView
+                
+                
             }
             return view
         }
@@ -144,20 +162,46 @@ class MapVC: UIViewController, MKMapViewDelegate {
         
         self.u++
         if self.u == 2{
-            self.textLabel.text = "After a few months of hard work and challenging projects, I'm proud to say that I can implement what I design. And it's LIBERATING."
+            UIView.animateWithDuration(1.5, animations: {
+                    self.textLabel.alpha = 0.0
+                    self.textLabel.alpha = 1.0
+                       self.textLabel.text = "And after a few months of hard work and challenging projects, I'm proud to say that I can now implement what I design."
+            })
+   
+        } else if self.u == 3{
+             UIView.animateWithDuration(1.5, animations: {
+                self.textLabel.alpha = 0.0
+                self.textLabel.alpha = 1.0
+                self.textLabel.text = "It feels AWESOME."
+
+            })
+        } else if self.u == 4{
+           UIView.animateWithDuration(1.5, animations: {
+            self.textLabel.alpha = 0.0
+            self.textLabel.alpha = 1.0
+                self.textLabel.text = "So I'd like to share with you some of what I've accomplished on my way here."
+            })
+        } else if self.u == 5{
+            self.imageView.animationImages = self.brianRunArray
+            self.imageView.animationDuration = 1.2
+            self.imageView.animationRepeatCount = 2
+            self.imageView.startAnimating()
+            UIView.animateWithDuration(1.2,animations:{
+                self.imageView.frame.origin.x = self.imageView.frame.origin.x+400
+                self.textLabel.alpha = 0
+                
+                var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("gosegue"), userInfo: nil, repeats: false)
+            })
         }
-        
     }
     
+    func gosegue() {
+        self.performSegueWithIdentifier("ontoProject", sender: self)
+    }
+
+    
     func back(sender: UIBarButtonItem) {
-        // Perform your custom actions
-        
         var introductionVC:IntroductionVC = IntroductionVC()
-        // ...
-        // Go back to the previous ViewController
-        //self.navigationController?.popViewControllerAnimated(true)
-        //        self.navigationController?.popToViewController(introductionVC, animated: false)
-        
         performSegueWithIdentifier("backtoConfession", sender: sender)
     }
 
@@ -166,10 +210,9 @@ class MapVC: UIViewController, MKMapViewDelegate {
         if (overlay is MKCircle)
         {
             var circleRenderer = MKCircleRenderer(overlay: overlay)
-            circleRenderer.strokeColor = UIColor.greenColor()
             circleRenderer.fillColor = UIColor(
-                red: 0,
-                green: 1.0,
+                red: 1.0,
+                green: 0.0,
                 blue: 0,
                 alpha: 0.5)
             
