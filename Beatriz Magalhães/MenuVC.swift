@@ -54,7 +54,6 @@ class MenuVC: UIViewController {
             self.nameView.frame = CGRectMake(0, 300, self.width*3, 60)
             
             }, completion: { finished in
-                println(" life animation worked")
         })
 
         
@@ -66,7 +65,6 @@ class MenuVC: UIViewController {
             self.storyView.frame = CGRect(x:170, y:350, width:650, height:70)
             
             }, completion: { finished in
-                println(" life animation worked")
         })
         
         //  ArtView
@@ -77,7 +75,6 @@ class MenuVC: UIViewController {
             self.artView.frame = CGRect(x:170, y:440, width:650, height:70)
             
             }, completion: { finished in
-                println(" life animation worked")
         })
         
         //  ArtView
@@ -88,7 +85,6 @@ class MenuVC: UIViewController {
             self.devView.frame = CGRect(x:170, y:530, width:650, height:70)
             
             }, completion: { finished in
-                println(" life animation worked")
         })
         
         //  ArtView
@@ -99,7 +95,6 @@ class MenuVC: UIViewController {
             self.contactView.frame = CGRect(x:170, y:620, width:650, height:70)
             
             }, completion: { finished in
-                println(" life animation worked")
         })
 
     }

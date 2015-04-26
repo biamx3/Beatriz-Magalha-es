@@ -15,8 +15,7 @@ class IntroductionVC: UIViewController {
     //Screen size
     var width = UIScreen.mainScreen().bounds.size.width
     var height = UIScreen.mainScreen().bounds.size.height
-    
-    var originalX:CGFloat!
+
     //var x
     var x:Int = 1
     
@@ -68,9 +67,9 @@ class IntroductionVC: UIViewController {
         
         self.navigationController?.navigationBarHidden = false
         
-        //Set original X
-        self.originalX = self.brianView.frame.origin.x
-        println("\(self.originalX)")
+        var b = UIBarButtonItem(title: "menu>", style: .Plain, target: self, action: Selector("sayHello"))
+        
+        self.navigationItem.rightBarButtonItem = b
         
         //Swipe
         var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
@@ -105,6 +104,11 @@ class IntroductionVC: UIViewController {
         self.brianView.frame = CGRectMake(self.width/5, 570, self.brianView.frame.width, self.brianView.frame.height)
         
         self.brianView.frame.origin.y = 570
+    }
+    
+    
+    func sayHello(){
+        performSegueWithIdentifier("introMenu", sender: self)
     }
     
     @IBAction func brianButton(sender: UIButton) {
@@ -173,6 +177,7 @@ class IntroductionVC: UIViewController {
             })
         }
     }
+    
     
     func handleSwipes(sender:UISwipeGestureRecognizer) {
         if (sender.direction == .Right) {

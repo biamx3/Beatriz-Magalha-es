@@ -72,12 +72,19 @@ class MapVC: UIViewController, MKMapViewDelegate {
         })
     }
 
+    func sayHello(){
+        performSegueWithIdentifier("mapMenu", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = false
         
+        var b = UIBarButtonItem(title: "menu>", style: .Plain, target: self, action: Selector("sayHello"))
+        
+        self.navigationItem.rightBarButtonItem = b
+
         self.textLabel.alpha = 0
         
 

@@ -67,6 +67,10 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
         
         self.navigationController?.navigationBarHidden = false
         
+        var b = UIBarButtonItem(title: "menu>", style: .Plain, target: self, action: Selector("sayHello"))
+        
+        self.navigationItem.rightBarButtonItem = b
+        
         let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
         navigationController?.navigationBar.tintColor = swiftColor
         navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Geeza Pro", size: 20)!], forState: UIControlState.Normal)
@@ -95,6 +99,10 @@ class ProjectController: UICollectionViewController, UICollectionViewDelegate {
         layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
+    }
+    
+    func sayHello(){
+        performSegueWithIdentifier("brainMenu", sender: self)
     }
     
     

@@ -67,6 +67,10 @@ class BreakController: UICollectionViewController, UICollectionViewDelegate {
         
         self.navigationController?.navigationBarHidden = false
         
+        var b = UIBarButtonItem(title: "menu>", style: .Plain, target: self, action: Selector("sayHello"))
+        
+        self.navigationItem.rightBarButtonItem = b
+        
         let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
         navigationController?.navigationBar.tintColor = swiftColor
         navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Geeza Pro", size: 20)!], forState: UIControlState.Normal)
@@ -95,6 +99,10 @@ class BreakController: UICollectionViewController, UICollectionViewDelegate {
         layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
+    }
+    
+    func sayHello(){
+        performSegueWithIdentifier("breakMenu", sender: self)
     }
     
     
@@ -145,6 +153,7 @@ class BreakController: UICollectionViewController, UICollectionViewDelegate {
             self.imageView.animationRepeatCount = 1
             self.imageView.startAnimating()
             UIView.animateWithDuration(1.2, animations: {
+                self.label.alpha=0
                 self.imageView.frame.origin.x = self.imageView.frame.origin.x*4
                 var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("gosegue"), userInfo: nil, repeats: false)
             })

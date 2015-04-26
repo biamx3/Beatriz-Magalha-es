@@ -68,6 +68,11 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = false
+        
+        var b = UIBarButtonItem(title: "menu>", style: .Plain, target: self, action: Selector("sayHello"))
+        
+        self.navigationItem.rightBarButtonItem = b
+
 
         
         let swiftColor = UIColor(red: 251/255, green: 169/255, blue: 111/255, alpha: 1)
@@ -149,7 +154,9 @@ class LayoutController: UICollectionViewController, UICollectionViewDelegate {
 //    func blankPressed(sender: UIButton!){
 //            performSegueWithIdentifier("secondsegue", sender: sender)
 //    }
-    
+    func sayHello(){
+        performSegueWithIdentifier("layoutMenu", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

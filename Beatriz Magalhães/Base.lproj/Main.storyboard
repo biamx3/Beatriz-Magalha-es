@@ -318,14 +318,7 @@
                             <outletCollection property="gestureRecognizers" destination="ZRy-DS-Ebi" appends="YES" id="7GD-YZ-p40"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="99w-YB-6dE">
-                        <barButtonItem key="rightBarButtonItem" title="menu&gt;" id="JJk-Cp-Yoj">
-                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="ayj-g9-vcP" kind="show" id="eb8-XS-WmS"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="99w-YB-6dE"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -339,12 +332,13 @@
                         <outlet property="swipeLabel" destination="VBx-Iv-zgQ" id="YjU-es-sTa"/>
                         <outlet property="swiperightLabel" destination="AyA-Gt-68H" id="MYo-lV-ggv"/>
                         <segue destination="EcV-oW-rs4" kind="show" identifier="firstsegue" id="soZ-iw-WBr"/>
+                        <segue destination="ayj-g9-vcP" kind="show" identifier="introMenu" id="tx4-zz-JgP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="ZRy-DS-Ebi"/>
             </objects>
-            <point key="canvasLocation" x="411.75" y="1031.25"/>
+            <point key="canvasLocation" x="249.75" y="1739.25"/>
         </scene>
         <!--MenuVC-->
         <scene sceneID="5gM-TO-el5">
@@ -574,7 +568,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNs-BX-tgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1834.5" y="1257.75"/>
+            <point key="canvasLocation" x="1396.5" y="1851.75"/>
         </scene>
         <!--Layout Controller-->
         <scene sceneID="clr-Ev-BIn">
@@ -619,6 +613,7 @@
                                 </variation>
                                 <connections>
                                     <outlet property="pinImage" destination="rff-ZH-gR3" id="XOH-v9-9Gp"/>
+                                    <segue destination="ayj-g9-vcP" kind="show" identifier="layoutMenu" id="mxj-3L-ipD"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -627,11 +622,7 @@
                             <outlet property="delegate" destination="EcV-oW-rs4" id="XXR-dz-ZTb"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="9yF-VI-5hX">
-                        <barButtonItem key="rightBarButtonItem" title="menu&gt;" id="ZJg-ei-Jdk">
-                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="9yF-VI-5hX"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="mFp-a5-gCY" kind="show" identifier="thirdsegue" id="aKg-f9-BaO"/>
@@ -640,7 +631,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DN7-0c-F2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164.75" y="765.75"/>
+            <point key="canvasLocation" x="689.25" y="1169.25"/>
         </scene>
         <!--ConfessionVC-->
         <scene sceneID="mGD-j8-sf6">
@@ -874,14 +865,7 @@
                             <outletCollection property="gestureRecognizers" destination="4gY-PB-bZ1" appends="YES" id="EG9-HF-j1K"/>
                         </connections>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="&lt;menu" id="NEo-sW-MGO">
-                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="ayj-g9-vcP" kind="show" id="Ar7-6A-x76"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -897,12 +881,13 @@
                         <outlet property="wholeLabel" destination="seb-GU-BjP" id="yoo-v7-grZ"/>
                         <segue destination="i3e-Yy-16y" kind="show" identifier="fourthsegue" id="0zo-LN-rGr"/>
                         <segue destination="EcV-oW-rs4" kind="show" identifier="backtoArt" id="Nj7-Cf-LbW"/>
+                        <segue destination="ayj-g9-vcP" kind="show" identifier="confessionMenu" id="c2s-1T-Zog"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leA-09-IsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="4gY-PB-bZ1"/>
             </objects>
-            <point key="canvasLocation" x="1902.75" y="527.25"/>
+            <point key="canvasLocation" x="1134.75" y="863.25"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="y67-27-GJ4">
@@ -976,21 +961,18 @@
                             </mask>
                         </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="&lt;menu" id="Qr7-6Q-3NI">
-                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <connections>
                         <outlet property="mapView" destination="rDv-9O-Qbs" id="HOw-MY-zcr"/>
                         <outlet property="textLabel" destination="SQx-32-0hB" id="7he-Yq-ZSK"/>
                         <segue destination="mFp-a5-gCY" kind="show" identifier="backtoConfession" id="bwT-9f-f2l"/>
                         <segue destination="lc4-pi-VzL" kind="show" identifier="toBreak" id="Y7o-pJ-eEF"/>
+                        <segue destination="ayj-g9-vcP" kind="show" identifier="mapMenu" id="gkz-B2-sBR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Y-NW-8Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2590.5" y="515.25"/>
+            <point key="canvasLocation" x="2062.5" y="989.25"/>
         </scene>
         <!--Break Controller-->
         <scene sceneID="YI7-Hw-c8A">
@@ -1057,22 +1039,17 @@
                             <outlet property="delegate" destination="lc4-pi-VzL" id="wcM-xG-HvS"/>
                         </connections>
                     </collectionView>
-                    <toolbarItems>
-                        <barButtonItem title="&lt;menu" id="7A1-2T-i1i">
-                            <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="ayj-g9-vcP" kind="show" id="WJg-CR-vnu"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="i3e-Yy-16y" kind="show" identifier="fromBreak" id="A3Y-Qs-4hh"/>
                         <segue destination="YPz-w9-e4G" kind="show" identifier="toBrain" id="gOd-oS-pkE"/>
+                        <segue destination="ayj-g9-vcP" kind="show" identifier="breakMenu" id="ugl-Th-eCb"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwJ-Dc-fVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586.25" y="1958.25"/>
+            <point key="canvasLocation" x="2036.25" y="2525.25"/>
         </scene>
         <!--Project Controller-->
         <scene sceneID="Sac-Pm-iSR">
@@ -1151,11 +1128,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="lc4-pi-VzL" kind="show" identifier="backBreak" id="mfS-tK-mSt"/>
+                        <segue destination="ayj-g9-vcP" kind="show" identifier="brainMenu" id="jjU-Gr-P5M"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYd-Sq-ZBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3090.75" y="1712.25"/>
+            <point key="canvasLocation" x="2676.75" y="1712.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RmU-cN-OD1">
@@ -1173,7 +1151,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7iS-Ko-Iiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1196.25" y="1257.75"/>
+            <point key="canvasLocation" x="843.75" y="2595.75"/>
         </scene>
     </scenes>
     <resources>
@@ -1182,12 +1160,12 @@
         <image name="brian7.png" width="1280" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mfS-tK-mSt"/>
-        <segue reference="A3Y-Qs-4hh"/>
-        <segue reference="WJg-CR-vnu"/>
-        <segue reference="bwT-9f-f2l"/>
+        <segue reference="Y7o-pJ-eEF"/>
+        <segue reference="0zo-LN-rGr"/>
+        <segue reference="aKg-f9-BaO"/>
         <segue reference="Nj7-Cf-LbW"/>
-        <segue reference="Fr7-UC-x1k"/>
+        <segue reference="lNc-oP-fA8"/>
+        <segue reference="c2s-1T-Zog"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.67683599750000001" blue="0.4511480672" alpha="1" colorSpace="calibratedRGB"/>
 </document>

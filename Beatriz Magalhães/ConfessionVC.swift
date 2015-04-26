@@ -188,6 +188,10 @@ class ConfessionVC: UIViewController {
         
         self.navigationController?.navigationBarHidden = false
 
+        var b = UIBarButtonItem(title: "menu>", style: .Plain, target: self, action: Selector("sayHello"))
+        
+        self.navigationItem.rightBarButtonItem = b
+
         
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "<back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
@@ -242,16 +246,15 @@ class ConfessionVC: UIViewController {
         self.wasLabel.font = UIFont(name: "Menlo-Italic", size: 60)
         self.wasLabel.frame = CGRectMake(860,500, 400, 400)
         self.wasLabel.textColor = UIColor(red: 122/255, green: 132/255, blue: 255/255, alpha: 1.0)
-        
-        
-        
         self.view.addSubview(self.wasLabel)
         self.wasLabel.alpha = 0.0
         
-
-
-        
      }
+    
+    func sayHello(){
+        performSegueWithIdentifier("confessionMenu", sender: self)
+    }
+
     
     func brianPressed(sender: UIButton!){
         self.w++
